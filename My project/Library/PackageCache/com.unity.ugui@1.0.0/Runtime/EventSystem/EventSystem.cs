@@ -409,7 +409,7 @@ namespace UnityEngine.EventSystems
                 var go = new GameObject(panel.name, typeof(PanelEventHandler), typeof(PanelRaycaster));
                 go.transform.SetParent(transform);
                 panel.selectableGameObject = go;
-                panel.destroyed += () => Destroy(go);
+                panel.destroyed += () => DestroyImmediate(go);
             }
         }
 #endif
