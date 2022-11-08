@@ -6,11 +6,21 @@ public class MapCube : MonoBehaviour
 {
     [HideInInspector]
     public GameObject turretGo;//store the turret on the current cube
+    public TurretData turretData;
 
-    public void BuildTurret(GameObject turretPrefab)
+    public void BuildTurret(TurretData turretData)
     {
-        turretGo = GameObject.Instantiate(turretPrefab, transform.position, Quaternion.identity);
+        this.turretData = turretData;
+        turretGo = GameObject.Instantiate(turretData.turretPrefab, transform.position, Quaternion.identity);
     }
 
-    
+     
+    public void SellTurret()
+    {
+        Destroy(turretGo);
+        turretGo = null;
+        turretData = null;
+    }
+
+
 }

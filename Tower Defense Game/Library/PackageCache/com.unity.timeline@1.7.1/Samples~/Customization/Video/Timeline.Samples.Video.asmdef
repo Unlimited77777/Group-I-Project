@@ -1,15 +1,15 @@
 {
-    "name": "Unity.InputSystem.Recorder",
+    "name": "Timeline.Samples.Video",
     "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c"
+        "GUID:f06555f75b070af458a003d92f9efb00"
     ],
-    "optionalUnityReferences": [],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": true,
+    "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }

@@ -13,11 +13,15 @@ public class BuildManager : MonoBehaviour
 
     //The current chosen turret which is going to build
     private TurretData selectedTurretData;
+    //The current chosen turret which has been built
+    public MapCube selectedMapCube;
 
+    
     public Text moneyText;
     public Animator moneyAnimator;
-    private int money = 500;
-    void UpdateMoney(int change)
+    public int money = 500;
+    public int sellprice;
+    public void UpdateMoney(int change)
     {
         money += change;
         moneyText.text = "$" + money;
@@ -42,7 +46,7 @@ public class BuildManager : MonoBehaviour
                         if (money >= selectedTurretData.cost)
                         {   
                             UpdateMoney(-selectedTurretData.cost);
-                            mapCube.BuildTurret(selectedTurretData.turretPrefab);
+                            mapCube.BuildTurret(selectedTurretData);
                             
                         }
                         else//do not have enough money
@@ -50,9 +54,16 @@ public class BuildManager : MonoBehaviour
                             moneyAnimator.SetTrigger("Flicker");
                         }
                     }
-                    else//to do level up
+                    else if (mapCube.turretGo != null)//to do sell
                     {
-
+                        
+                        selectedMapCube = mapCube;
+                        if (selectedTurretData == null)
+                        {
+                            sellprice = (int)(0.7 * selectedMapCube.turretData.cost);
+                            UpdateMoney(+sellprice);
+                            selectedMapCube.SellTurret();
+                        }
                     }
                 }
             }
@@ -63,6 +74,7 @@ public class BuildManager : MonoBehaviour
         if (ison)
         {
             selectedTurretData = Turret1;
+            
         }
     }
     public void OnTurret2Selected(bool ison)
@@ -70,6 +82,7 @@ public class BuildManager : MonoBehaviour
         if (ison)
         {
             selectedTurretData = Turret2;
+           
         }
     }
 
@@ -78,6 +91,18 @@ public class BuildManager : MonoBehaviour
         if (ison)
         {
             selectedTurretData = Turret3;
+            
         }
     }
+
+
+
+    public void OnSellSelected(bool ison)
+    {
+        if (ison)
+        {
+            selectedTurretData = null;
+        }
+    }
+
 }

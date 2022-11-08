@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9858d4c8055fd45539a2e86388f7c5ba, type: 3}
-  m_Name: InputDeviceTester
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: Audio_jog
   m_EditorClassIdentifier: 
-  url: https://github.com/Unity-Technologies/InputSystem/releases/download/%VERSION%/InputDeviceTester-%VERSION%.unitypackage
-  packageDeps:
-  - com.unity.inputsystem

@@ -1,9 +1,8 @@
 {
-    "name": "Unity.InputSystem.RebindingUI",
+    "name": "Unity.Services.Core.Device",
     "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c"
+        "Unity.Services.Core.Internal"
     ],
-    "optionalUnityReferences": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -11,5 +10,6 @@
     "precompiledReferences": [],
     "autoReferenced": false,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }
