@@ -1,5 +1,8 @@
+Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCmp
 Unity.Collections.LowLevel.Unsafe.UnsafeUtility::Free
+Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpy
 Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpyStride
+Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemMove
 Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemSet
 Unity.Collections.LowLevel.Unsafe.UnsafeUtility::Malloc
 Unity.Jobs.JobHandle::CombineDependenciesInternalPtr_Injected
@@ -21,11 +24,13 @@ UnityEngine.Animator::SetTriggerString
 UnityEngine.Application::get_isBatchMode
 UnityEngine.Application::get_isFocused
 UnityEngine.Application::get_isPlaying
+UnityEngine.Application::get_runInBackground
 UnityEngine.Application::get_platform
 UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.Behaviour::get_enabled
 UnityEngine.Behaviour::get_isActiveAndEnabled
 UnityEngine.Behaviour::set_enabled
+UnityEngine.Camera::get_stereoEnabled
 UnityEngine.Camera::GetAllCamerasCount
 UnityEngine.Camera::GetAllCamerasImpl
 UnityEngine.Camera::get_cullingMask
@@ -39,6 +44,7 @@ UnityEngine.Camera::ScreenToViewportPoint_Injected
 UnityEngine.Camera::SetupCurrent
 UnityEngine.Camera::WorldToScreenPoint_Injected
 UnityEngine.Camera::get_pixelRect_Injected
+UnityEngine.Camera::set_rect_Injected
 UnityEngine.Camera::get_current
 UnityEngine.Camera::get_main
 UnityEngine.Camera::get_clearFlags
@@ -55,6 +61,7 @@ UnityEngine.Canvas::get_targetDisplay
 UnityEngine.Canvas::get_referencePixelsPerUnit
 UnityEngine.Canvas::get_scaleFactor
 UnityEngine.Canvas::SetExternalCanvasEnabled
+UnityEngine.Canvas::get_pixelRect_Injected
 UnityEngine.Canvas::get_renderingDisplaySize_Injected
 UnityEngine.Canvas::set_additionalShaderChannels
 UnityEngine.Canvas::set_overrideSorting
@@ -98,10 +105,13 @@ UnityEngine.CanvasRenderer::set_hasPopInstruction
 UnityEngine.CanvasRenderer::set_materialCount
 UnityEngine.CanvasRenderer::set_popMaterialCount
 UnityEngine.CanvasRenderer::GetMaterial
+UnityEngine.Component::BroadcastMessage
 UnityEngine.Component::GetComponentsForListInternal
+UnityEngine.Component::SendMessage
 UnityEngine.Component::get_gameObject
 UnityEngine.Component::get_transform
 UnityEngine.ComputeShader::FindKernel
+UnityEngine.ContactFilter2D::CheckConsistency_Injected
 UnityEngine.Coroutine::ReleaseCoroutine
 UnityEngine.Cubemap::Internal_CreateImpl
 UnityEngine.Cubemap::get_isReadable
@@ -174,6 +184,7 @@ UnityEngine.GameObject::GetComponentInChildren
 UnityEngine.GameObject::GetComponentInParent
 UnityEngine.GameObject::Internal_AddComponentWithType
 UnityEngine.GameObject::TryGetComponentInternal
+UnityEngine.GameObject::Find
 UnityEngine.GameObject::FindGameObjectsWithTag
 UnityEngine.GameObject::get_transform
 UnityEngine.Gizmos::DrawWireSphere_Injected
@@ -261,8 +272,6 @@ UnityEngine.GUIUtility::set_systemCopyBuffer
 UnityEngine.Hash128::Hash128ToStringImpl_Injected
 UnityEngine.Hash128::Parse_Injected
 UnityEngine.Input::GetButtonDown
-UnityEngine.Input::GetKeyDownInt
-UnityEngine.Input::GetKeyInt
 UnityEngine.Input::GetMouseButton
 UnityEngine.Input::GetMouseButtonDown
 UnityEngine.Input::GetMouseButtonUp
@@ -281,6 +290,9 @@ UnityEngine.Input::get_mouseScrollDelta_Injected
 UnityEngine.Input::set_compositionCursorPos_Injected
 UnityEngine.Input::set_imeCompositionMode
 UnityEngine.Input::get_imeCompositionMode
+UnityEngine.IntegratedSubsystem::SetHandle
+UnityEngine.JsonUtility::FromJsonInternal
+UnityEngine.JsonUtility::ToJsonInternal
 UnityEngine.LayerMask::NameToLayer
 UnityEngine.Light::get_useColorTemperature
 UnityEngine.Light::get_bounceIntensity
@@ -384,9 +396,16 @@ UnityEngine.ParticleSystem::Emit_Internal
 UnityEngine.ParticleSystemRenderer::GetMeshes
 UnityEngine.Physics::get_defaultPhysicsScene_Injected
 UnityEngine.Physics::Internal_RaycastAll_Injected
+UnityEngine.Physics2D::get_queriesHitTriggers
+UnityEngine.Physics2D::GetRayIntersectionAll_Internal_Injected
 UnityEngine.PhysicsScene::Internal_RaycastTest_Injected
 UnityEngine.PhysicsScene::Internal_Raycast_Injected
 UnityEngine.PhysicsScene::Internal_RaycastNonAlloc_Injected
+UnityEngine.PhysicsScene2D::GetRayIntersectionArray_Internal_Injected
+UnityEngine.PhysicsScene2D::RaycastArray_Internal_Injected
+UnityEngine.PhysicsScene2D::RaycastList_Internal_Injected
+UnityEngine.PhysicsScene2D::GetRayIntersection_Internal_Injected
+UnityEngine.PhysicsScene2D::Raycast_Internal_Injected
 UnityEngine.Playables.PlayableHandle::IsValid_Injected
 UnityEngine.Playables.PlayableHandle::GetPlayableType_Injected
 UnityEngine.PlayerConnectionInternal::IsConnected
@@ -456,6 +475,7 @@ UnityEngine.RenderTexture::GetActive
 UnityEngine.RenderTexture::GetTemporary_Internal_Injected
 UnityEngine.Resources::GetBuiltinResource
 UnityEngine.ResourcesAPIInternal::Load
+UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
 UnityEngine.ResourcesAPIInternal::FindShaderByName
 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal
 UnityEngine.SceneManagement.SceneManager::get_sceneCount
@@ -466,6 +486,7 @@ UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width
 UnityEngine.Screen::get_dpi
+UnityEngine.Screen::GetScreenOrientation
 UnityEngine.ScriptableObject::CreateScriptableObject
 UnityEngine.ScriptableObject::CreateScriptableObjectInstanceFromType
 UnityEngine.ScriptingRuntime::GetAllUserAssemblies
@@ -487,6 +508,9 @@ UnityEngine.Sprite::get_associatedAlphaSplitTexture
 UnityEngine.Sprite::get_texture
 UnityEngine.Sprite::get_uv
 UnityEngine.Sprite::get_vertices
+UnityEngine.SubsystemDescriptorBindings::GetId
+UnityEngine.SubsystemManager::StaticConstructScriptingClassMap
+UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::ReportSingleSubsystemAnalytics
 UnityEngine.SystemInfo::IsFormatSupported
 UnityEngine.SystemInfo::SupportsTextureFormatNative
 UnityEngine.SystemInfo::GetMaxRenderTextureSize
@@ -545,6 +569,7 @@ UnityEngine.Texture2DArray::get_isReadable
 UnityEngine.Texture3D::Internal_CreateImpl
 UnityEngine.Texture3D::get_isReadable
 UnityEngine.Time::get_deltaTime
+UnityEngine.Time::get_fixedUnscaledTime
 UnityEngine.Time::get_realtimeSinceStartup
 UnityEngine.Time::get_unscaledDeltaTime
 UnityEngine.Time::get_unscaledTime
@@ -619,6 +644,8 @@ UnityEngine.UIElements.UIR.Utility::WaitForCPUFencePassed
 UnityEngine.UISystemProfilerApi::AddMarker
 UnityEngine.UISystemProfilerApi::BeginSample
 UnityEngine.UISystemProfilerApi::EndSample
+UnityEngine.XR.XRDevice::DisableAutoXRCameraTracking
+UnityEngine.XR.XRMeshSubsystem/MeshTransformList::Dispose
 UnityEngine.Yoga.Native::YGConfigGetUseWebDefaults
 UnityEngine.Yoga.Native::YGNodeGetHasNewLayout
 UnityEngine.Yoga.Native::YGNodeIsDirty
@@ -686,3 +713,11 @@ UnityEngine.Yoga.Native::YGNodeStyleSetWidthAuto
 UnityEngine.Yoga.Native::YGNodeStyleSetWidthPercent
 UnityEngine.Yoga.Native::YGSetManagedObject
 UnityEngine.Yoga.Native::YGNodeStyleGetDirection
+UnityEngineInternal.Input.NativeInputSystem::get_currentTime
+UnityEngineInternal.Input.NativeInputSystem::get_currentTimeOffsetToRealtimeSinceStartup
+UnityEngineInternal.Input.NativeInputSystem::AllocateDeviceId
+UnityEngineInternal.Input.NativeInputSystem::IOCTL
+UnityEngineInternal.Input.NativeInputSystem::QueueInputEvent
+UnityEngineInternal.Input.NativeInputSystem::SetPollingFrequency
+UnityEngineInternal.Input.NativeInputSystem::Update
+UnityEngineInternal.Input.NativeInputSystem::set_hasDeviceDiscoveredCallback
