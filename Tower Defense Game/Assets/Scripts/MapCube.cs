@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MapCube : MonoBehaviour
+{
+    [HideInInspector]
+    public GameObject turretGo;//store the turret on the current cube
+    public TurretData turretData;
+
+    public void BuildTurret(TurretData turretData)
+    {
+        this.turretData = turretData;
+        turretGo = GameObject.Instantiate(turretData.turretPrefab, transform.position, Quaternion.identity);
+    }
+
+     
+    public void SellTurret()
+    {
+        Destroy(turretGo);
+        turretGo = null;
+        turretData = null;
+    }
+
+
+}
