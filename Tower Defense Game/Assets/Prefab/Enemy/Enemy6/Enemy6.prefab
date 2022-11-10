@@ -876,4 +876,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 25
   hp: 150
-  reward: 15
+  reward: 40
