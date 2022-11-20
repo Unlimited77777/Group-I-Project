@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Random = System.Random;
 
 public class BuildManager : MonoBehaviour
 {
-
+    
     public TurretData Turret1;
     public TurretData Turret2;
     public TurretData Turret3;
+    
 
     //The current chosen turret which is going to build
     private TurretData selectedTurretData;
@@ -33,6 +35,9 @@ public class BuildManager : MonoBehaviour
             if (EventSystem.current.IsPointerOverGameObject()==false)
             {
                 //the build of turret
+                //Create a random integer to controll the type of turret
+                Random rnd = new Random();
+                int t = rnd.Next(1, 4);
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
                 bool isCollider = Physics.Raycast(ray,out hit, 2000, LayerMask.GetMask("MapCube"));
@@ -43,11 +48,23 @@ public class BuildManager : MonoBehaviour
                     if (mapCube.turretGo == null)
                     {
                         //can create
+                        //According to the random integer t to choose the turret randomly
+                        if(t == 1)
+                        {
+                            selectedTurretData = Turret1;
+                        }
+                        else if(t == 2)
+                        {
+                            selectedTurretData = Turret2;
+                        }
+                        else
+                        {
+                            selectedTurretData = Turret3;
+                        }
                         if (money >= selectedTurretData.cost)
                         {   
                             UpdateMoney(-selectedTurretData.cost);
                             mapCube.BuildTurret(selectedTurretData);
-                            
                         }
                         else//do not have enough money
                         {
@@ -69,32 +86,28 @@ public class BuildManager : MonoBehaviour
             }
         }
     }
-    public void OnTurret1Selected(bool ison)
-    {
-        if (ison)
-        {
-            selectedTurretData = Turret1;
-            
-        }
-    }
-    public void OnTurret2Selected(bool ison)
-    {
-        if (ison)
-        {
-            selectedTurretData = Turret2;
-           
-        }
-    }
 
-    public void OnTurret3Selected(bool ison)
+    public void OnTurretRSelected(bool ison)
     {
-        if (ison)
+        Random rnd = new Random();
+        int t = rnd.Next(1, 4);
+        if(ison)
         {
-            selectedTurretData = Turret3;
-            
+            //The first turret we choose is also random
+            if(t == 1)
+            {
+                selectedTurretData = Turret1;
+            }
+            else if(t == 2)
+            {
+                selectedTurretData = Turret2;
+            }
+            else
+            {
+                selectedTurretData = Turret3;
+            }
         }
     }
-
 
 
     public void OnSellSelected(bool ison)
