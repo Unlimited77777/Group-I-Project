@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13994, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_profiles:
+  - m_name: Default
+    m_settings:
+    - displayName: 
+      displayId: 0
+      enabled: 0
+      mode: 0
+      viewWindowTitle: 
+      playModeViewSettings:
+        rid: -2
+    m_buildTarget: 20
+    displayAPIMode: 0
+    m_displayAPIUseSystemConfiguration: 0
+  - m_name: Simulate Standalone
+    m_settings:
+    - displayName: Color LCD
+      displayId: 69734272
+      enabled: 1
+      mode: 0
+      viewWindowTitle: Game
+      playModeViewSettings:
+        rid: 6825826975309365248
+    - displayName: DELL S2421H
+      displayId: 722489230
+      enabled: 1
+      mode: 0
+      viewWindowTitle: Game
+      playModeViewSettings:
+        rid: 6825826975309365249
+    m_buildTarget: 20
+    displayAPIMode: 1
+    m_displayAPIUseSystemConfiguration: 0
+  m_isSortDisplayOrder: 1
+  m_showNotificationOnFullscreen: 1
+  m_showToolbarOnFullscreen: 0
+  m_selectedProfileIndex: 0
+  m_mainDisplaySetting:
+    displayName: Main Display
+    displayId: 1
+    enabled: 1
+    mode: 0
+    viewWindowTitle: Game
+    playModeViewSettings:
+      rid: 6825826975309365252
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 6825826975309365248
+      type: {class: GameViewFullscreenSettings, ns: UnityEditor, asm: UnityEditor.CoreModule}
+      data:
+        m_displayNumber: 0
+        m_showToolbar: 0
+        m_vsyncEnabled: 0
+        m_showStats: 0
+        m_showGizmos: 0
+        m_selectedSizeIndex: 0
+    - rid: 6825826975309365249
+      type: {class: GameViewFullscreenSettings, ns: UnityEditor, asm: UnityEditor.CoreModule}
+      data:
+        m_displayNumber: 1
+        m_showToolbar: 0
+        m_vsyncEnabled: 0
+        m_showStats: 0
+        m_showGizmos: 0
+        m_selectedSizeIndex: 0
+    - rid: 6825826975309365252
+      type: {class: GameViewFullscreenSettings, ns: UnityEditor, asm: UnityEditor.CoreModule}
+      data:
+        m_displayNumber: 0
+        m_showToolbar: 0
+        m_vsyncEnabled: 0
+        m_showStats: 0
+        m_showGizmos: 0
+        m_selectedSizeIndex: 0
