@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
     //arrive at the end point
     void ReachDestination()
     {
-        GameManager.Instance.Lose();
+        GameManager.Instance.Live_down();
         GameObject.Destroy(this.gameObject);
     }
 

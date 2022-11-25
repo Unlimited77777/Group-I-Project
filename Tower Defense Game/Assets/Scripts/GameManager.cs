@@ -8,12 +8,16 @@ public class GameManager : MonoBehaviour
 {
     public GameObject endUI;
     public Text endMessage;
+    public static int lives;
+    public int start_lives = 30;
 
     public static GameManager Instance;
     private EnemySpawner enemySpawner;
+    
     private void Awake()
     {
         Instance = this;
+        lives = start_lives;
         enemySpawner = GetComponent<EnemySpawner>();
     }
     public void Win()
@@ -32,6 +36,12 @@ public class GameManager : MonoBehaviour
     public void OnRestartButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void Live_down(){
+        lives -= 1;
+        if(lives == 0){
+            Lose();
+        }
     }
 
     public void OnMenuButton()
