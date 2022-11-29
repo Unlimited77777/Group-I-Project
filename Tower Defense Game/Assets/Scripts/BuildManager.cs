@@ -7,7 +7,7 @@ using Random = System.Random;
 
 public class BuildManager : MonoBehaviour
 {
-    
+    public TurretData Turret0;
     public TurretData Turret1;
     public TurretData Turret2;
     public TurretData Turret3;
@@ -45,37 +45,40 @@ public class BuildManager : MonoBehaviour
                 {
                     //get the mapcube which is click by mouse
                     MapCube mapCube = hit.collider.GetComponent<MapCube>();
-                    if (mapCube.turretGo == null)
+                    if (selectedTurretData != Turret0)
                     {
-                        //can create
-                        //According to the random integer t to choose the turret randomly
-                        if(t == 1)
+                        if (mapCube.turretGo == null)
                         {
-                            selectedTurretData = Turret1;
-                        }
-                        else if(t == 2)
-                        {
-                            selectedTurretData = Turret2;
-                        }
-                        else
-                        {
-                            selectedTurretData = Turret3;
-                        }
-                        if (money >= selectedTurretData.cost)
-                        {   
-                            UpdateMoney(-selectedTurretData.cost);
-                            mapCube.BuildTurret(selectedTurretData);
-                        }
-                        else//do not have enough money
-                        {
-                            moneyAnimator.SetTrigger("Flicker");
+                            //can create
+                            //According to the random integer t to choose the turret randomly
+                            if(t == 1)
+                            {
+                                selectedTurretData = Turret1;
+                            }
+                            else if(t == 2)
+                            {
+                                selectedTurretData = Turret2;
+                            }
+                            else
+                            {
+                                selectedTurretData = Turret3;
+                            }
+                            if (money >= selectedTurretData.cost)
+                            {   
+                                UpdateMoney(-selectedTurretData.cost);
+                                mapCube.BuildTurret(selectedTurretData);
+                            }
+                            else//do not have enough money
+                            {
+                                moneyAnimator.SetTrigger("Flicker");
+                            }
                         }
                     }
-                    else if (mapCube.turretGo != null)//to do sell
+                    else if (selectedTurretData == Turret0)//to do sell
                     {
                         
                         selectedMapCube = mapCube;
-                        if (selectedTurretData == null)
+                        if (mapCube.turretGo != null)
                         {
                             sellprice = (int)(0.7 * selectedMapCube.turretData.cost);
                             UpdateMoney(+sellprice);
@@ -114,7 +117,7 @@ public class BuildManager : MonoBehaviour
     {
         if (ison)
         {
-            selectedTurretData = null;
+            selectedTurretData = Turret0;
         }
     }
 
