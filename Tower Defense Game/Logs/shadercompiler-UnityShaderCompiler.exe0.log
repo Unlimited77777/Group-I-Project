@@ -1,3 +1,4 @@
-Base path: 'D:/Unity/2022.1.20f1/Editor/Data', plugins path 'D:/Unity/2022.1.20f1/Editor/Data/PlaybackEngines'
+Base path: 'E:/新建文件夹/2022.1.20f1/Editor/Data', plugins path 'E:/新建文件夹/2022.1.20f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
+Cmd: shutdown
