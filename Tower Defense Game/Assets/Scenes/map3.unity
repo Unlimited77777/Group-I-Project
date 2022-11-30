@@ -10032,7 +10032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endUI: {fileID: 1330753188}
-  endMessage: {fileID: 0}
+  endMessage: {fileID: 1321044146}
   start_lives: 30
 --- !u!114 &818014036
 MonoBehaviour:
@@ -10071,8 +10071,8 @@ MonoBehaviour:
     costUpgrade: 50
     type: 0
   selectedMapCube: {fileID: 0}
-  moneyText: {fileID: 0}
-  moneyAnimator: {fileID: 0}
+  moneyText: {fileID: 1760451871}
+  moneyAnimator: {fileID: 1760451870}
   money: 500
   sellprice: 0
 --- !u!114 &818014037
@@ -10112,7 +10112,7 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 6695694329991288249, guid: dd7dafc6994eefc47a2d298b2f53b106, type: 3}
     count: 30
     rate: 0.1
-  START: {fileID: 1880007293}
+  START: {fileID: 1330261932}
   waveRate: 3
 --- !u!1001 &821317988
 PrefabInstance:
@@ -10802,9 +10802,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 818014036}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnTurretRSelected
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12345,7 +12345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963643116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 38, y: 0, z: 38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24603,7 +24603,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 818014036}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: OnSellSelected
         m_Mode: 6
@@ -26153,14 +26153,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135950820}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 1, z: -10}
+  m_LocalRotation: {x: 0.35483682, y: -0, z: -0, w: 0.9349283}
+  m_LocalPosition: {x: 47, y: 42, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 41.567, y: 0, z: 0}
 --- !u!1001 &2140689506
 PrefabInstance:
   m_ObjectHideFlags: 0
