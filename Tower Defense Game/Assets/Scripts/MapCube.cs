@@ -14,6 +14,11 @@ public class MapCube : MonoBehaviour
         turretGo = GameObject.Instantiate(turretData.turretPrefab, transform.position, Quaternion.identity);
     }
 
+    public void MergeTurret()
+    {   
+        Destroy(turretGo);
+        turretGo = GameObject.Instantiate(turretData.turretUpgradePrefab, transform.position, Quaternion.identity);
+    }
      
     public void SellTurret()
     {

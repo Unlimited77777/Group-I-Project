@@ -11,14 +11,17 @@ public class BuildManager : MonoBehaviour
     public TurretData Turret1;
     public TurretData Turret2;
     public TurretData Turret3;
-    
+    public TurretData Merge;
+
 
     //The current chosen turret which is going to build
     private TurretData selectedTurretData;
-    //The current chosen turret which has been built
+    //The current chosen turret by left button of the mouse which has been built
     public MapCube selectedMapCube;
+    //The current chosen turret by right button of the mouse which has been built
+    public MapCube selectedMapCubeMerge;
 
-    
+
     public Text moneyText;
     public Animator moneyAnimator;
     public int money = 500;
@@ -45,17 +48,31 @@ public class BuildManager : MonoBehaviour
                 {
                     //get the mapcube which is click by mouse
                     MapCube mapCube = hit.collider.GetComponent<MapCube>();
-                    if (selectedTurretData != Turret0)
+                    if (selectedTurretData == Merge)//to get the data for merge
+                    {
+                        selectedMapCube = mapCube;
+                    }
+                    else if (selectedTurretData == Turret0)//to do sell
+                    {
+                        selectedMapCube = mapCube;
+                        if (mapCube.turretGo != null)
+                        {
+                            sellprice = (int)(0.7 * selectedMapCube.turretData.cost);
+                            UpdateMoney(+sellprice);
+                            selectedMapCube.SellTurret();
+                        }
+                    }
+                    else
                     {
                         if (mapCube.turretGo == null)
                         {
                             //can create
                             //According to the random integer t to choose the turret randomly
-                            if(t == 1)
+                            if (t == 1)
                             {
                                 selectedTurretData = Turret1;
                             }
-                            else if(t == 2)
+                            else if (t == 2)
                             {
                                 selectedTurretData = Turret2;
                             }
@@ -64,7 +81,7 @@ public class BuildManager : MonoBehaviour
                                 selectedTurretData = Turret3;
                             }
                             if (money >= selectedTurretData.cost)
-                            {   
+                            {
                                 UpdateMoney(-selectedTurretData.cost);
                                 mapCube.BuildTurret(selectedTurretData);
                             }
@@ -74,15 +91,28 @@ public class BuildManager : MonoBehaviour
                             }
                         }
                     }
-                    else if (selectedTurretData == Turret0)//to do sell
+                }
+            }
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (EventSystem.current.IsPointerOverGameObject() == false)
+            {       
+                Ray ray2 = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit2;
+                bool isCollider2 = Physics.Raycast(ray2, out hit2, 2000, LayerMask.GetMask("MapCube"));
+                if (isCollider2)
+                {
+                    //get the mapcube which is click right button of mouse
+                    MapCube mapCube2 = hit2.collider.GetComponent<MapCube>();
+                    if (selectedTurretData == Merge)
                     {
-                        
-                        selectedMapCube = mapCube;
-                        if (mapCube.turretGo != null)
-                        {
-                            sellprice = (int)(0.7 * selectedMapCube.turretData.cost);
-                            UpdateMoney(+sellprice);
-                            selectedMapCube.SellTurret();
+                        selectedMapCubeMerge = mapCube2;
+                        if (selectedMapCubeMerge.turretData.turretPrefab == selectedMapCube.turretData.turretPrefab)
+                        {//do the merge
+                            selectedMapCube.MergeTurret();
+                            selectedMapCubeMerge.SellTurret();
                         }
                     }
                 }
@@ -121,4 +151,11 @@ public class BuildManager : MonoBehaviour
         }
     }
 
+    public void OnMergeSelected(bool ison)
+    {
+        if (ison)
+        {
+            selectedTurretData = Merge;
+        }
+    }
 }
