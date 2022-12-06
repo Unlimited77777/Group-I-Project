@@ -1,5 +1,17 @@
 sceneSetups:
-- path: Assets/Scenes/Map3.unity
+- path: Assets/Scenes/MainMenu.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/Map1-easy.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Map2-easy.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Map3-easy.unity
+  isLoaded: 0
+  isActive: 0
   isSubScene: 0
