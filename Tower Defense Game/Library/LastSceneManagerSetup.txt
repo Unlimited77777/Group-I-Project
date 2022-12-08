@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Map2-easy.unity
+- path: Assets/Scenes/Map1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
