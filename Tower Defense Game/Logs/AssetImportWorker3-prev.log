@@ -1,0 +1,305 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.20f1 (01d83b40d570) revision 120891'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 15970 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/keina/Documents/GitHub/Group-I-Project/Tower Defense Game
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+60818
+Successfully changed project path to: C:/Users/keina/Documents/GitHub/Group-I-Project/Tower Defense Game
+C:/Users/keina/Documents/GitHub/Group-I-Project/Tower Defense Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 125.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.20f1 (01d83b40d570)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/keina/Documents/GitHub/Group-I-Project/Tower Defense Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a52)
+    Vendor:   Intel
+    VRAM:     7985 MB
+    Driver:   27.20.100.9621
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56972
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007020 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 148.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.064 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1065ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (747ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (153ms)
+				TypeCache.Initialize (152ms)
+					TypeCache.ScanAssembly (150ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (492ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (10ms)
+				RefreshPlugins (149ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006027 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\keina\Documents\GitHub\Group-I-Project\Tower Defense Game\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\keina\Documents\GitHub\Group-I-Project\Tower Defense Game\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 139.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.784 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1785ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1412ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (463ms)
+				TypeCache.Initialize (458ms)
+					TypeCache.ScanAssembly (452ms)
+				ResolveRequiredComponents (5ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (705ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (8ms)
+				RefreshPlugins (139ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (382ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3771 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (58.4 KB). Loaded Objects now: 4235.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 6.324700 ms (FindLiveObjects: 0.281900 ms CreateObjectMapping: 0.148400 ms MarkObjects: 5.719800 ms  DeleteObjects: 0.172600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 185288.228544 seconds.
+  path: Assets/PopupAsylum/PA_SciFiCombatants/_Imported3D/Vehicles/Materials/PA_ArchlightBomberMat.mat
+  artifactKey: Guid(b24f7a066cecbf14fb1725b9b2f12f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PopupAsylum/PA_SciFiCombatants/_Imported3D/Vehicles/Materials/PA_ArchlightBomberMat.mat using Guid(b24f7a066cecbf14fb1725b9b2f12f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e524ca714ddbd5fa942d84a391b36be6') in 0.836118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.740250 seconds.
+  path: Assets/PopupAsylum/PA_SciFiCombatants/_Imported3D/Vehicles/PA_ArchlightBomber.fbx
+  artifactKey: Guid(db26e966ac015b443890b9346c614e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PopupAsylum/PA_SciFiCombatants/_Imported3D/Vehicles/PA_ArchlightBomber.fbx using Guid(db26e966ac015b443890b9346c614e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc1ac9d33e74de6c00e355ba46668e3') in 0.253267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.532143 seconds.
+  path: Assets/PopupAsylum/PA_SciFiCombatants/_Imported3D/Characters/Materials/PA_WarriorMat.mat
+  artifactKey: Guid(f2735dc09a5b53641ba65ba813b6f488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PopupAsylum/PA_SciFiCombatants/_Imported3D/Characters/Materials/PA_WarriorMat.mat using Guid(f2735dc09a5b53641ba65ba813b6f488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ef57cf1ea4ff3db29b7ddc64b39a37') in 0.042320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.018895 seconds.
+  path: Assets/PopupAsylum/PA_SciFiCombatants/Textures/Characters/PA_DroneNorm.png
+  artifactKey: Guid(49c3b803d5c3f104e811db37a73ec863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PopupAsylum/PA_SciFiCombatants/Textures/Characters/PA_DroneNorm.png using Guid(49c3b803d5c3f104e811db37a73ec863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '230cc8148cb1562e5255f33e0c37806a') in 0.093177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/PopupAsylum/PA_SciFiCombatants/Textures/Characters/PA_WarriorNorm.png
+  artifactKey: Guid(73352c6c2e503ab4ab08ecec77d389ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PopupAsylum/PA_SciFiCombatants/Textures/Characters/PA_WarriorNorm.png using Guid(73352c6c2e503ab4ab08ecec77d389ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e4318979261668a0e879265c6720745') in 0.034019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.912073 seconds.
+  path: Assets/PopupAsylum/PA_SciFiCombatants/Textures/Vehicles/PA_ArchfireTankNorm.png
+  artifactKey: Guid(c9be5e01f0dcd16479232488830296bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PopupAsylum/PA_SciFiCombatants/Textures/Vehicles/PA_ArchfireTankNorm.png using Guid(c9be5e01f0dcd16479232488830296bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7aba5cf2333e29ef8020521f65135ad') in 0.048975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/PopupAsylum/PA_SciFiCombatants/Textures/Vehicles/PA_ArchlightBomberNorm.png
+  artifactKey: Guid(ec68b92e49740214986d7baf8bafb43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PopupAsylum/PA_SciFiCombatants/Textures/Vehicles/PA_ArchlightBomberNorm.png using Guid(ec68b92e49740214986d7baf8bafb43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b7da4d7db8c32f22578cca2ad62a58') in 0.044797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/PopupAsylum/PA_SciFiCombatants/Textures/Vehicles/Pa_DropPodNorm.png
+  artifactKey: Guid(53b77552ce4ba0244ad32e073f04ccee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PopupAsylum/PA_SciFiCombatants/Textures/Vehicles/Pa_DropPodNorm.png using Guid(53b77552ce4ba0244ad32e073f04ccee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568e9739fba91d488c3345651333e0f5') in 0.032326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 77.549150 seconds.
+  path: Assets/PopupAsylum/PA_SciFiCombatants/_Imported3D/Characters/PA_Warrior.fbx
+  artifactKey: Guid(cc633396b5f95da4b916357a5508ee4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PopupAsylum/PA_SciFiCombatants/_Imported3D/Characters/PA_Warrior.fbx using Guid(cc633396b5f95da4b916357a5508ee4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf389689185fd98f0776aded7deebff') in 0.311920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/PopupAsylum/PA_SciFiCombatants/_Imported3D/Characters/Materials
+  artifactKey: Guid(2f99e4a5b8e04bf46b474e02eb0a0a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PopupAsylum/PA_SciFiCombatants/_Imported3D/Characters/Materials using Guid(2f99e4a5b8e04bf46b474e02eb0a0a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af48b0beb5a2ae572a9e6cf403fbe63') in 0.003685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 313.484603 seconds.
+  path: Assets/Autarca/AlienShipsPack/Materials/AlienDestroyerGreen.mat
+  artifactKey: Guid(505d626f44c207345ad0ffa64d4cd0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Materials/AlienDestroyerGreen.mat using Guid(505d626f44c207345ad0ffa64d4cd0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b99ed8c887f6e31ab0b204638f163d90') in 1.541116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Autarca/AlienShipsPack/Materials/AlienFighter.mat
+  artifactKey: Guid(1a28d63c1672b9847915a31e7e342324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Materials/AlienFighter.mat using Guid(1a28d63c1672b9847915a31e7e342324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '290f46546871f3a98253eb87ec5a0d9d') in 0.103377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Autarca/AlienShipsPack/Materials/BioTorpedoGreen.mat
+  artifactKey: Guid(2f33c33d23a2dae4fa8c0f5a56d4f03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Materials/BioTorpedoGreen.mat using Guid(2f33c33d23a2dae4fa8c0f5a56d4f03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0e7a77289a91c4726affeeaa8b14ba') in 0.070938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Autarca/AlienShipsPack/Materials/BioTorpedo.mat
+  artifactKey: Guid(74f161b937e8f3e46ada026fa002840c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Materials/BioTorpedo.mat using Guid(74f161b937e8f3e46ada026fa002840c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47bb11b6c98ceae989e354a9752b2c83') in 0.076284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Autarca/AlienShipsPack/Materials/AlienFighterGreen.mat
+  artifactKey: Guid(bc3d169a8ef803d4abf078bc075e99e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Materials/AlienFighterGreen.mat using Guid(bc3d169a8ef803d4abf078bc075e99e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986ecfeaea98456e83a06f4e5a100126') in 0.065891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Autarca/AlienShipsPack/Materials/BioTorpedoWhite.mat
+  artifactKey: Guid(e6c1410f3dcb18f4fbf8632a7990f246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Materials/BioTorpedoWhite.mat using Guid(e6c1410f3dcb18f4fbf8632a7990f246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ebf0de45ed8bfe7d51f19473b4b16bb') in 0.084249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Autarca/AlienShipsPack/Materials/AlienFighterWhite.mat
+  artifactKey: Guid(84a2b5a80e12d4340b0392ba4f7f1e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Materials/AlienFighterWhite.mat using Guid(84a2b5a80e12d4340b0392ba4f7f1e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ba560cd1ae933935b9af3ca029a45c') in 0.080412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.490234 seconds.
+  path: Assets/Autarca/AlienShipsPack/Prefabs/AlienDestroyerGreen.prefab
+  artifactKey: Guid(4eddec5e5a6ed514cb7704f25ab89890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Prefabs/AlienDestroyerGreen.prefab using Guid(4eddec5e5a6ed514cb7704f25ab89890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e156b32abda59d31603e83d4a3aa0b1f') in 0.164441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Autarca/AlienShipsPack/Prefabs/AlienFighterWhite.prefab
+  artifactKey: Guid(e18a33b201b7d4b41a22a039bc5602bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Prefabs/AlienFighterWhite.prefab using Guid(e18a33b201b7d4b41a22a039bc5602bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a863e4f6a8c23ee45238e3709cf35bc') in 0.070794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Autarca/AlienShipsPack/Prefabs/BioTorpedoGreen.prefab
+  artifactKey: Guid(a30ef2e5b0c4a2f4f894c4ff7f998e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Prefabs/BioTorpedoGreen.prefab using Guid(a30ef2e5b0c4a2f4f894c4ff7f998e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c861bfdbab7934e8c30d72137e0e3d') in 0.063502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Autarca/AlienShipsPack/Prefabs/BioTorpedoWhite.prefab
+  artifactKey: Guid(0eb1dc9b0d8505f45a18313076e1e653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Prefabs/BioTorpedoWhite.prefab using Guid(0eb1dc9b0d8505f45a18313076e1e653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73576f12e8c1db6fb6e3bd4b7325798c') in 0.065086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Autarca/AlienShipsPack/Prefabs/AlienFighterGreen.prefab
+  artifactKey: Guid(adc8a98e73ca77a41b7d79a6beec2ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autarca/AlienShipsPack/Prefabs/AlienFighterGreen.prefab using Guid(adc8a98e73ca77a41b7d79a6beec2ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9be1f39589730644a99e39f9826b978') in 0.080596 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
