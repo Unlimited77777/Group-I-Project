@@ -3,3 +3,7 @@ sceneSetups:
   isLoaded: 1
   isActive: 1
   isSubScene: 0
+- path: Assets/Scenes/Map1-easy.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
