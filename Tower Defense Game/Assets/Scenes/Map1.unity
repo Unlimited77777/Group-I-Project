@@ -13144,6 +13144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c13ad1e480c994bacd43631376536b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positions: []
 --- !u!1001 &1687565709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16288,6 +16289,7 @@ MonoBehaviour:
     rate: 0.1
   START: {fileID: 1549707868}
   waveRate: 3
+  waypoint: {fileID: 1678103469}
 --- !u!4 &2007995378
 Transform:
   m_ObjectHideFlags: 0

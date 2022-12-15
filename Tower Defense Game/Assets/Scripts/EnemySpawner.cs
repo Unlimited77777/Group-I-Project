@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     public Transform START;
     public float waveRate = 0.2f;
     private Coroutine coroutine;
+    public Waypoints waypoint;
     void Start()
     {
         coroutine = StartCoroutine(SpawnEnemy());
@@ -23,7 +24,8 @@ public class EnemySpawner : MonoBehaviour
         {
             for(int i = 0; i < wave.count; i++)
             {
-                GameObject.Instantiate(wave.enemyPrefab, START.position, Quaternion.identity);
+                GameObject enemy = GameObject.Instantiate(wave.enemyPrefab, START.position, Quaternion.identity);
+                enemy.GetComponent<Enemy>().waypoint = waypoint;
                 EnemyAlive++;
                 if(i != wave.count-1)
                     yield return new WaitForSeconds(wave.rate);

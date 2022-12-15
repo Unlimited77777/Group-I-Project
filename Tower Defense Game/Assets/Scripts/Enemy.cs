@@ -14,10 +14,12 @@ public class Enemy : MonoBehaviour
     private Transform[] positions;
     private int index = 0;
     public int reward = 20;
+    public Waypoints waypoint;
     // Start is called before the first frame update
     void Start()
     {
-        positions = Waypoints.positions;
+        
+        positions = waypoint.positions;
         totalHp = hp;
         hpSlider = GetComponentInChildren<Slider>();
         moneyManager = GameObject.Find("wave").GetComponent<BuildManager>();

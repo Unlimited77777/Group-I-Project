@@ -1641,6 +1641,7 @@ MonoBehaviour:
     rate: 0.1
   START: {fileID: 1880007293}
   waveRate: 3
+  waypoint: {fileID: 212089059}
 --- !u!1001 &206277516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1891,6 +1892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c13ad1e480c994bacd43631376536b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positions: []
 --- !u!1001 &213393569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6631,6 +6633,7 @@ MonoBehaviour:
     rate: 0.1
   START: {fileID: 1330261932}
   waveRate: 3
+  waypoint: {fileID: 1355879801}
 --- !u!1001 &825180286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11037,6 +11040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c13ad1e480c994bacd43631376536b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positions: []
 --- !u!1001 &1369776786
 PrefabInstance:
   m_ObjectHideFlags: 0

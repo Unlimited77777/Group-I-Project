@@ -2,11 +2,11 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+/Tower Defense Game/[Ll]ibrary/
+/Tower Defense Game/[Tt]emp/
+/Tower Defense Game/[Oo]bj/
+/Tower Defense Game/[Ll]ogs/
+/Tower Defense Game/[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
