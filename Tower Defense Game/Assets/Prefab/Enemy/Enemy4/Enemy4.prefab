@@ -495,3 +495,5 @@ MonoBehaviour:
   speed: 25
   hp: 150
   reward: 20
+  waypoint: {fileID: 0}
+  impactEffect: {fileID: 7690821285200560781, guid: e2a5cdb88b9e8384092dd56bc5a5903d, type: 3}

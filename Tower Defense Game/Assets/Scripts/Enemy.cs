@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     private int index = 0;
     public int reward = 20;
     public Waypoints waypoint;
+    public GameObject impactEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +71,8 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        GameObject effect = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+        Destroy(effect, 2f);
         Destroy(this.gameObject);
         moneyManager.UpdateMoney(reward);
     }
