@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using Random = System.Random;
 
 public class BuildManager : MonoBehaviour
@@ -12,6 +13,7 @@ public class BuildManager : MonoBehaviour
     public TurretData Turret2;
     public TurretData Turret3;
     public TurretData Merge;
+    
 
 
     //The current chosen turret which is going to build
@@ -33,7 +35,8 @@ public class BuildManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        Vector2 mousePosition = Mouse.current.position.ReadValue();
+        if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             if (EventSystem.current.IsPointerOverGameObject()==false)
             {
@@ -41,7 +44,7 @@ public class BuildManager : MonoBehaviour
                 //Create a random integer to controll the type of turret
                 Random rnd = new Random();
                 int t = rnd.Next(1, 4);
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Ray ray = Camera.main.ScreenPointToRay(mousePosition);
                 RaycastHit hit;
                 bool isCollider = Physics.Raycast(ray,out hit, 2000, LayerMask.GetMask("MapCube"));
                 if (isCollider)
@@ -95,11 +98,11 @@ public class BuildManager : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Mouse.current.rightButton.wasPressedThisFrame)
         {
             if (EventSystem.current.IsPointerOverGameObject() == false)
             {       
-                Ray ray2 = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Ray ray2 = Camera.main.ScreenPointToRay(mousePosition);
                 RaycastHit hit2;
                 bool isCollider2 = Physics.Raycast(ray2, out hit2, 2000, LayerMask.GetMask("MapCube"));
                 if (isCollider2)
@@ -108,9 +111,11 @@ public class BuildManager : MonoBehaviour
                     MapCube mapCube2 = hit2.collider.GetComponent<MapCube>();
                     if (selectedTurretData == Merge)
                     {
+                        Debug.Log("111");
                         selectedMapCubeMerge = mapCube2;
                         if (selectedMapCubeMerge.turretData.turretPrefab == selectedMapCube.turretData.turretPrefab)
                         {//do the merge
+                            Debug.Log("222");
                             selectedMapCube.MergeTurret();
                             selectedMapCubeMerge.SellTurret();
                         }
