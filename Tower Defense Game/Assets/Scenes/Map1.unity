@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5169,7 +5169,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5227,7 +5227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 83.8, y: -15.1, z: 23.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7670,8 +7670,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 758b03204b63a08408494f4b3c0bab09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  mouseSpeed: 2000
+  maxSpeed: 5
+  acceleration: 10
+  damping: 15
+  stepSize: 2
+  zoomDampening: 7.5
+  minHeight: 5
+  maxHeight: 50
+  zoomSpeed: 2
+  maxRotationSpeed: 1
+  edgeTolerance: 0.05
 --- !u!82 &963194230
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16273,28 +16281,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 1095249287d641e45a62c64825d6e89d, type: 3}
+  - enemyPrefab: {fileID: 1062015658370612, guid: 7708f923bd153024aae3b8bd650d3472, type: 3}
     count: 2
     rate: 1
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 3d0dd6f2a00e42d4ba0eff3deeb864bd, type: 3}
+  - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
     count: 5
     rate: 0.7
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 0a9bcb1286c451b4d9046e32cc0718e6, type: 3}
+  - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
     count: 6
     rate: 0.5
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 555f84c1a09c5394a9e64e01dec64870, type: 3}
+  - enemyPrefab: {fileID: 1906374043378120, guid: ba0db41c461085e4ea75616490d9b538, type: 3}
     count: 10
     rate: 0.3
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 1f0babb4dce774347914700059ccf6f8, type: 3}
+  - enemyPrefab: {fileID: 1314043251266546, guid: 5a89b7b2625fd7547bada09016683cc9, type: 3}
     count: 13
     rate: 0.2
-  - enemyPrefab: {fileID: 6695694329991288249, guid: b8157b4e6bc16d943aec992dbfe480f9, type: 3}
+  - enemyPrefab: {fileID: 1048570700629992, guid: 7fd4adaeaa97c7e49b03af4ddb6dcc37, type: 3}
     count: 17
     rate: 0.1
-  - enemyPrefab: {fileID: 6695694329991288249, guid: a2b68f916afa4274eb3d3aeff5b9c430, type: 3}
+  - enemyPrefab: {fileID: 1963857078541744, guid: d12e9c2e5f8ac5c47896a2b458732596, type: 3}
     count: 20
     rate: 0.1
-  - enemyPrefab: {fileID: 6695694329991288249, guid: dd7dafc6994eefc47a2d298b2f53b106, type: 3}
+  - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
     count: 30
     rate: 0.1
   START: {fileID: 1549707868}
