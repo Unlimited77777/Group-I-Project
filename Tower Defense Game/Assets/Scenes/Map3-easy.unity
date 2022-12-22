@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13662,7 +13662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1624783842
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13679,9 +13679,9 @@ RectTransform:
   m_Father: {fileID: 854066780}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10, y: -69}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -245, y: -21}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1624783843
@@ -13696,7 +13696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc0fae96dcfb34f4f91fa9b89445c15c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeSlide: {fileID: 0}
+  volumeSlide: {fileID: 968664511}
   myToggle: {fileID: 1624783844}
 --- !u!114 &1624783844
 MonoBehaviour:
