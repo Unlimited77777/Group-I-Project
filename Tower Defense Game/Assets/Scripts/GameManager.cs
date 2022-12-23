@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
     private EnemySpawner enemySpawner;
+    public Save save;
     
     private void Awake()
     {
@@ -48,4 +49,5 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
 }
