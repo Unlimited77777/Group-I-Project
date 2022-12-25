@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17827,7 +17827,7 @@ MonoBehaviour:
     costUpgrade: 30
     type: 0
   Turret2:
-    turretPrefab: {fileID: 1000013227101710, guid: ed4ef18f9780b3b41ac60f649439986b, type: 3}
+    turretPrefab: {fileID: 0}
     turretUpgradePrefab: {fileID: 1314665628698371109, guid: e091d26ca18f2a849ab04db8c834e351, type: 3}
     turretUpgradePrefab_Lv2: {fileID: 8883506045744411457, guid: 41428e5f3467efd4aa23a919c6ffb455, type: 3}
     cost: 100

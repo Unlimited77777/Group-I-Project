@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Turret : MonoBehaviour
 {
     public Transform target;
@@ -14,10 +15,17 @@ public class Turret : MonoBehaviour
 
     public GameObject bulletPrefab;
     public Transform FirePoint;
+
+    [SerializeField] private AudioSource shooting_sound;
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        shooting_sound = GetComponent<AudioSource>();
+        if (shooting_sound == null)
+        {
+            Debug.LogError("The audiosource is null");
+        }
     }
 
     void UpdateTarget()
@@ -60,6 +68,7 @@ public class Turret : MonoBehaviour
        if (fireCountdown <= 0f)
         {
             Shoot();
+            shooting_sound.Play();
             fireCountdown = 1f / fireRate;
         }
         fireCountdown -= Time.deltaTime;
@@ -81,4 +90,5 @@ public class Turret : MonoBehaviour
     {
         Gizmos.DrawWireSphere(transform.position, range);
     }
+
 }
