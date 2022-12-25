@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 4604934139642459149}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2398953655395134792
 MeshFilter:
@@ -116,6 +116,8 @@ MonoBehaviour:
   range: 25
   enemyTag: Enemy
   fireRate: 0.5
+  partToRotate: {fileID: 6076429869613340369}
+  turnSpeed: 10
   bulletPrefab: {fileID: 1877404971329631675, guid: dc4df1c3ce1837d449f39bbef12b3e19, type: 3}
   FirePoint: {fileID: 4604934139642459149}
 --- !u!1 &8620257362043105937

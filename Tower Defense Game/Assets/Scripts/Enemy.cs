@@ -76,4 +76,5 @@ public class Enemy : MonoBehaviour
         Destroy(this.gameObject);
         moneyManager.UpdateMoney(reward);
     }
+    
 }

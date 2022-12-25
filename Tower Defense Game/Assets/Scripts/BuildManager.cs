@@ -111,12 +111,17 @@ public class BuildManager : MonoBehaviour
                     MapCube mapCube2 = hit2.collider.GetComponent<MapCube>();
                     if (selectedTurretData == Merge)
                     {
-                        Debug.Log("111");
                         selectedMapCubeMerge = mapCube2;
                         if (selectedMapCubeMerge.turretData.turretPrefab == selectedMapCube.turretData.turretPrefab)
                         {//do the merge
-                            Debug.Log("222");
+                            print("merge1");
                             selectedMapCube.MergeTurret();
+                            selectedMapCubeMerge.SellTurret();
+                        }
+                        else if(selectedMapCubeMerge.turretData.turretUpgradePrefab == selectedMapCube.turretData.turretUpgradePrefab)
+                        {//do the merge
+                            print("merge2");
+                            selectedMapCube.MergeTurretLv2();
                             selectedMapCubeMerge.SellTurret();
                         }
                     }

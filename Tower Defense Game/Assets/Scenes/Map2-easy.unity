@@ -4242,7 +4242,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1814967124}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: OnTurretRSelected
         m_Mode: 6
@@ -9720,30 +9720,35 @@ MonoBehaviour:
   Turret0:
     turretPrefab: {fileID: 0}
     turretUpgradePrefab: {fileID: 0}
+    turretUpgradePrefab_Lv2: {fileID: 0}
     cost: 0
     costUpgrade: 0
     type: 0
   Turret1:
     turretPrefab: {fileID: 1000013566905100, guid: 457faf71ae7461a49b88069aef3edb17, type: 3}
-    turretUpgradePrefab: {fileID: 1977708569852394711, guid: 9736ea54145e3ce40a7dcd9b48708883, type: 3}
+    turretUpgradePrefab: {fileID: 1023274960289760348, guid: b82d3d2a3794bd34b99eab755f1703e5, type: 3}
+    turretUpgradePrefab_Lv2: {fileID: 7045174053406379936, guid: 46577c3d7a88cb845a2e11780d24e954, type: 3}
     cost: 100
     costUpgrade: 30
     type: 0
   Turret2:
     turretPrefab: {fileID: 1000013227101710, guid: ed4ef18f9780b3b41ac60f649439986b, type: 3}
-    turretUpgradePrefab: {fileID: 3282041536590185370, guid: e54b7bc502cb75244883031a3a4f5182, type: 3}
+    turretUpgradePrefab: {fileID: 1314665628698371109, guid: e091d26ca18f2a849ab04db8c834e351, type: 3}
+    turretUpgradePrefab_Lv2: {fileID: 8883506045744411457, guid: 41428e5f3467efd4aa23a919c6ffb455, type: 3}
     cost: 100
     costUpgrade: 40
     type: 0
   Turret3:
-    turretPrefab: {fileID: 1000012105359850, guid: f8f27e36a67f56c42b29e1e50e91405f, type: 3}
-    turretUpgradePrefab: {fileID: 7307897287069155666, guid: d6b73f08662b6ec47b20c9f2684ce9f5, type: 3}
+    turretPrefab: {fileID: 1607275392736766532, guid: f8f27e36a67f56c42b29e1e50e91405f, type: 3}
+    turretUpgradePrefab: {fileID: 8737979827544110602, guid: 5c65a6cd93f1d5d44a78e5014f567aff, type: 3}
+    turretUpgradePrefab_Lv2: {fileID: 473019639770429786, guid: f72be5f60b759fc40b09843144864f2f, type: 3}
     cost: 100
     costUpgrade: 50
     type: 0
   Merge:
     turretPrefab: {fileID: 0}
     turretUpgradePrefab: {fileID: 0}
+    turretUpgradePrefab_Lv2: {fileID: 0}
     cost: 0
     costUpgrade: 0
     type: 0
@@ -10625,7 +10630,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1814967124}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: OnMergeSelected
         m_Mode: 6
@@ -11017,7 +11022,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1814967124}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: OnSellSelected
         m_Mode: 6
