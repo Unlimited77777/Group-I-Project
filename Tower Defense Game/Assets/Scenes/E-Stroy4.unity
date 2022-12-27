@@ -819,7 +819,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1598106952}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: OnStartGame
         m_Mode: 5
@@ -828,7 +828,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Map1-easy
+          m_StringArgument: Story-end1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1064383978
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1598106952}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: OnStartGame
         m_Mode: 5
@@ -962,7 +962,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Map1-easy
+          m_StringArgument: Story-end2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1452922677
@@ -1099,6 +1099,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d824a4071f982f4d9068be837bc5b5c, type: 3}
+--- !u!114 &1598106952 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2451397150146519601, guid: 5d824a4071f982f4d9068be837bc5b5c, type: 3}
+  m_PrefabInstance: {fileID: 1598106951}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008580f5045ed514dbbefd1dc001d183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1822807815
 GameObject:
   m_ObjectHideFlags: 0

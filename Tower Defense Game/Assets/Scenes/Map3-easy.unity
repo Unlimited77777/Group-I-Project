@@ -2012,16 +2012,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OnRestartButton
-        m_Mode: 1
+      - m_Target: {fileID: 473445809}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: OnStartGame
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: E-Story4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &212039233
@@ -4455,6 +4455,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d824a4071f982f4d9068be837bc5b5c, type: 3}
+--- !u!114 &473445809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2451397150146519601, guid: 5d824a4071f982f4d9068be837bc5b5c, type: 3}
+  m_PrefabInstance: {fileID: 473445808}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008580f5045ed514dbbefd1dc001d183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &491841083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414612, guid: 25320442416db44459f8ec0194f2c777, type: 3}

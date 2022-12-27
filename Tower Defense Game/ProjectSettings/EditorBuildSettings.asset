@@ -17,4 +17,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map3-easy.unity
     guid: 132e37efd5df3db42a0372c9a0b7fbf3
+  - enabled: 1
+    path: Assets/Scenes/E-Story1.unity
+    guid: eb334f3b7d60e8d469663f12f6bde0c9
+  - enabled: 1
+    path: Assets/Scenes/E-Story2.unity
+    guid: 90bcb0f892008b743a23cdb6cd49f7e4
+  - enabled: 1
+    path: Assets/Scenes/E-Story3.unity
+    guid: 2367c8fd6052a7b449e43334c6e7583c
+  - enabled: 1
+    path: Assets/Scenes/E-Stroy4.unity
+    guid: 74729d4aeacb1f84dbb94b3a53ef56ab
+  - enabled: 1
+    path: Assets/Scenes/Story-end1.unity
+    guid: 245db639be3c4d8429f5a4fe47c2a7ee
+  - enabled: 1
+    path: Assets/Scenes/Story-end2.unity
+    guid: 56e77dd1c63db3c46884e28be4fdc885
   m_configObjects: {}
