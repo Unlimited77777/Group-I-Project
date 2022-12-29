@@ -17761,27 +17761,6 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 6695694329991288249, guid: 1095249287d641e45a62c64825d6e89d, type: 3}
     count: 2
     rate: 1
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 3d0dd6f2a00e42d4ba0eff3deeb864bd, type: 3}
-    count: 5
-    rate: 0.7
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 0a9bcb1286c451b4d9046e32cc0718e6, type: 3}
-    count: 6
-    rate: 0.5
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 555f84c1a09c5394a9e64e01dec64870, type: 3}
-    count: 10
-    rate: 0.3
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 1f0babb4dce774347914700059ccf6f8, type: 3}
-    count: 13
-    rate: 0.2
-  - enemyPrefab: {fileID: 6695694329991288249, guid: b8157b4e6bc16d943aec992dbfe480f9, type: 3}
-    count: 17
-    rate: 0.1
-  - enemyPrefab: {fileID: 6695694329991288249, guid: a2b68f916afa4274eb3d3aeff5b9c430, type: 3}
-    count: 20
-    rate: 0.1
-  - enemyPrefab: {fileID: 6695694329991288249, guid: dd7dafc6994eefc47a2d298b2f53b106, type: 3}
-    count: 30
-    rate: 0.1
   START: {fileID: 1549707868}
   waveRate: 3
   waypoint: {fileID: 1678103469}

@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/E-Story3.unity
     guid: 2367c8fd6052a7b449e43334c6e7583c
   - enabled: 1
-    path: Assets/Scenes/E-Stroy4.unity
+    path: Assets/Scenes/E-Story4.unity
     guid: 74729d4aeacb1f84dbb94b3a53ef56ab
   - enabled: 1
     path: Assets/Scenes/Story-end1.unity
