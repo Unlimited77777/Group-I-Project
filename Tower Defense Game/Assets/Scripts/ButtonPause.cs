@@ -10,6 +10,11 @@ public class ButtonPause : MonoBehaviour
     //the ButtonPauseMenu
     public GameObject ingameMenu;
     public string LoadMap;
+    public MapCube[] list;
+    public Enemy[] enemyList;
+    public BuildManager moneySystem;
+    public GameManager lives;
+
     public void OnPause(){
         Time.timeScale = 0;
         ingameMenu.SetActive(true);
@@ -18,9 +23,8 @@ public class ButtonPause : MonoBehaviour
         Time.timeScale = 1f;
         ingameMenu.SetActive(false);
     }
-    public void OnRestart(string sceneName){
-        //Loading Scene0
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+    public void OnRestart(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
 
@@ -34,14 +38,30 @@ public class ButtonPause : MonoBehaviour
         LoadGame();
     }
 
-
-
     public void SaveGame()
     {
-        //save the game
         Save save = new Save();
         Scene scene = SceneManager.GetActiveScene();
         save.map = scene.name;
+        //save.money = moneySystem.money;
+        //save.lives = lives.live;
+        //foreach(Enemy enemy in enemyList)
+        //{
+        //    save.enemy.hp = enemy.hp;
+        //    save.enemy.speed = enemy.speed;
+        //}
+        //foreach (MapCube cube in list)
+        //{
+        //    if (cube != null)
+        //    {
+        //      save.turret.Add(cube);
+        //      save.tpositionX = Cubemap.positonX;
+        //      save.tpositionY = Cubemap.positonY;
+        //      save.tpositionZ = Cubemap.positonZ;
+        //    }
+        //}
+
+
         BinaryFormatter bf = new BinaryFormatter();
 
         FileStream fileStream = File.Create(Application.persistentDataPath + "/Data.text");
@@ -66,6 +86,12 @@ public class ButtonPause : MonoBehaviour
             LoadMap = save.map;
             SceneManager.LoadScene(LoadMap);
             Time.timeScale = 1f;
+            moneySystem.money = save.money;
+            // for(int i = 0; i< save.turret.Count; i++)
+            // {
+            //    MapCube newTurret = save.turret[i];
+            //    newTurret.BuildTurret(newTurret.turretData);
+            // }
         }
         else
         {
