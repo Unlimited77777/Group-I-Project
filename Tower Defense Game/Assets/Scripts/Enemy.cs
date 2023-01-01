@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
     {
         if(index > positions.Length - 1) return;
         transform.Translate((positions[index].position - transform.position).normalized * Time.deltaTime * speed);
-        if(Vector3.Distance(positions[index].position, transform.position) < 0.2f)
+        if (Vector3.Distance(positions[index].position, transform.position) < 0.2f)
         {
             index++;
         }

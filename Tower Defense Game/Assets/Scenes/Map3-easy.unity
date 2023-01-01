@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18218684, g: 0.22788873, b: 0.3073665, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1767,6 +1767,7 @@ MonoBehaviour:
   start_lives: 30
   save:
     map: 
+    money: 0
 --- !u!114 &183571498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7379,6 +7380,7 @@ MonoBehaviour:
   start_lives: 30
   save:
     map: 
+    money: 0
 --- !u!114 &818014036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8212,7 +8214,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8269,14 +8271,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896662818}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 4.5, y: 3, z: 0}
+  m_LocalRotation: {x: 0.23569068, y: 0.5504801, z: -0.29053882, w: 0.74633014}
+  m_LocalPosition: {x: 10.68, y: -73.84, z: 77.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 42.197, y: 67.556, z: -13.599}
 --- !u!1001 &898195078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11369,6 +11371,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingameMenu: {fileID: 1625773485}
   LoadMap: 
+  list: []
+  enemyList: []
+  moneySystem: {fileID: 0}
+  lives: {fileID: 0}
 --- !u!224 &1219660684
 RectTransform:
   m_ObjectHideFlags: 0
