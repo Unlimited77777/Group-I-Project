@@ -97,12 +97,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92300152adcfc846a61a96bdba464a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  hp: 150
+  speed: 25
+  hp: 400
   reward: 20
   waypoint: {fileID: 0}
-  impactEffect: {fileID: 0}
-  deathSound: {fileID: 8300000, guid: 3e24f3da0e57b49a28659db81404d6b6, type: 3}
+  impactEffect: {fileID: 7690821285200560781, guid: fc8e2cfb824711541919110eb001af60, type: 3}
 --- !u!82 &-4224587174577037604
 AudioSource:
   m_ObjectHideFlags: 0

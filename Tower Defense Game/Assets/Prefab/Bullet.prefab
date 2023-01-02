@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1877404971329631678
 MeshFilter:
@@ -112,4 +112,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 50
   impactEffect: {fileID: 7690821285200560781, guid: 7ce9bcd47225d234a9e2b01b14ebb508, type: 3}
-  speed: 70
+  speed: 140

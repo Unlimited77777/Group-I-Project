@@ -113,11 +113,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  hp: 150
+  hp: 100
   reward: 20
   waypoint: {fileID: 0}
-  impactEffect: {fileID: 0}
-  deathClip: {fileID: 8300000, guid: 3e24f3da0e57b49a28659db81404d6b6, type: 3}
+  impactEffect: {fileID: 7690821285200560781, guid: d540bf9e8a79f6d489ccc36b2c2d7b5b, type: 3}
 --- !u!82 &-8720517503080674524
 AudioSource:
   m_ObjectHideFlags: 0

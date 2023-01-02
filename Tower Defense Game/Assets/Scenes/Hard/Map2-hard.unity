@@ -3658,7 +3658,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: E-Story3
+          m_StringArgument: H-Story3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &805041895
@@ -4068,6 +4068,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingameMenu: {fileID: 351482014}
   LoadMap: 
+  list: []
+  enemyList: []
+  moneySystem: {fileID: 0}
+  lives: {fileID: 0}
 --- !u!224 &906416772
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9705,6 +9709,7 @@ MonoBehaviour:
   start_lives: 30
   save:
     map: 
+    money: 0
 --- !u!114 &1814967124
 MonoBehaviour:
   m_ObjectHideFlags: 0
