@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 108
+  controlID: 111
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 363.19995
     height: 770.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -317,37 +317,37 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefab/Enemy/Enemy8
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefab/Enemy/Enemy8
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\auss\Documents\GitHub\Group-I-Project\Tower Defense
     Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 172}
-    m_SelectedIDs: f4660000
-    m_LastClickedID: 26356
-    m_ExpandedIDs: 00000000d2660000d4660000f2660000f466000000ca9a3b
+    scrollPos: {x: 0, y: 33.400024}
+    m_SelectedIDs: 486b0000
+    m_LastClickedID: 27464
+    m_ExpandedIDs: 000000004a6500004c6500006a6500006c65000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Easy
+      m_OriginalName: Easy
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 25976
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d2660000d4660000
+    m_ExpandedIDs: 000000004a6500004c650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -489,9 +489,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6a720100
-      m_LastClickedID: 94826
-      m_ExpandedIDs: 5470feff98e9feffaaf1feff46f5feffa0fdfefff8fdfeff88fefeff14fffeffaafffeffa601ffff580bffffb816ffffaa1affff0823ffffc023ffff0c25ffff9e25ffffcc26ffffca2fffffee30ffff8e32ffff5833ffffa43bffffb43cffffec40fffffc41ffff604bffffa24cffff005dffffa06effff9881ffffb0b1ffff7cf1ffffae6d0000f490000020910000a4910000cc9100000ac0000024c400008cc50000d4cc000020ce00003ad200001ed80000c6d800003ed9000058df0000c4e1000006e500006eea0000bceb00002eec00005eed000078f100005cf7000016f80000a0f80000c6f90000e0fd0000a8fe000020ff0000fe060100400a0100561b0100601c0100ee1c01007e1d0100d61d0100a81e0100c22201008a230100022401009e280100de280100e02b0100c24f01005c6b0100cc720100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: f6c2ffff94d1ffffc6d9ffffa6e8ffff066700008673000066770000628e0000a29300007c970000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.17971857, y: 0.10806538, z: -0.01986714, w: -0.9775805}
     speed: 2
-    m_Value: {x: -0.17971542, y: 0.10806349, z: -0.019866792, w: -0.9775634}
+    m_Value: {x: -0.17971855, y: 0.10806538, z: -0.019867139, w: -0.9775804}
   m_Size:
     m_Target: 572.847
     speed: 2
