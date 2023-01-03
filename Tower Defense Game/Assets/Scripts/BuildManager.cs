@@ -54,6 +54,7 @@ public class BuildManager : MonoBehaviour
                     if (selectedTurretData == Merge)//to get the data for merge
                     {
                         selectedMapCube = mapCube;
+                        print(selectedMapCube);
                     }
                     else if (selectedTurretData == Turret0)//to do sell
                     {
@@ -111,19 +112,20 @@ public class BuildManager : MonoBehaviour
                     MapCube mapCube2 = hit2.collider.GetComponent<MapCube>();
                     if (selectedTurretData == Merge)
                     {
-                        selectedMapCubeMerge = mapCube2;
-                        if (selectedMapCubeMerge.turretData.turretPrefab == selectedMapCube.turretData.turretPrefab)
-                        {//do the merge
-                            print("merge1");
-                            selectedMapCube.MergeTurret();
-                            selectedMapCubeMerge.SellTurret();
+                        if(mapCube2 != selectedMapCube)
+                        {
+                            if (mapCube2.currentTurret == selectedMapCube.currentTurret)
+                            {//do the merge
+                                print("merge1 + " + mapCube2.turretGo);
+                                selectedMapCube.MergeTurret();
+                                mapCube2.SellTurret();
+                            }
                         }
-                        else if(selectedMapCubeMerge.turretData.turretUpgradePrefab == selectedMapCube.turretData.turretUpgradePrefab)
-                        {//do the merge
-                            print("merge2");
-                            selectedMapCube.MergeTurretLv2();
-                            selectedMapCubeMerge.SellTurret();
+                        else
+                        {
+                            print("same");
                         }
+                        
                     }
                 }
             }
