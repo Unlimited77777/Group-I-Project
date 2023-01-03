@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23048021916812000}
   - component: {fileID: 910723358965361400}
   - component: {fileID: -9013588889787599581}
+  - component: {fileID: -6343771382172981405}
   m_Layer: 0
   m_Name: AlienFighter
   m_TagString: Enemy
@@ -198,3 +199,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!135 &-6343771382172981405
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458391615630120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9192554
+  m_Center: {x: 0, y: -0.098113626, z: -0.30684307}

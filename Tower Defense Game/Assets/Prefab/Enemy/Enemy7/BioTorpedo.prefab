@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23197084716274270}
   - component: {fileID: -1522810217213388651}
   - component: {fileID: -4338938271591680874}
+  - component: {fileID: 7365701357471152992}
   m_Layer: 0
   m_Name: BioTorpedo
   m_TagString: Enemy
@@ -198,3 +199,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!135 &7365701357471152992
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906374043378120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.21826169
+  m_Center: {x: 0, y: 0, z: -0.06688098}

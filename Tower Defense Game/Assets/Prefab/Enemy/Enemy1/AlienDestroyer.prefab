@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 64954973120253374}
   - component: {fileID: -2079734262535701764}
   - component: {fileID: -8720517503080674524}
+  - component: {fileID: 4321187620576242951}
   m_Layer: 0
   m_Name: AlienDestroyer
   m_TagString: Enemy
@@ -213,3 +214,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!135 &4321187620576242951
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048570700629992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 9.499386
+  m_Center: {x: 0, y: 0.79953825, z: 1.4622607}

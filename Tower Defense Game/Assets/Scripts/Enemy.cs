@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     public int reward = 20;
     public Waypoints waypoint;
     public GameObject impactEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,18 +25,20 @@ public class Enemy : MonoBehaviour
         totalHp = hp;
         hpSlider = GetComponentInChildren<Slider>();
         moneyManager = GameObject.Find("wave").GetComponent<BuildManager>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       Move(); 
+        Move();
     }
 
     void Move()
     {
-        if(index > positions.Length - 1) return;
-        transform.Translate((positions[index].position - transform.position).normalized * Time.deltaTime * speed);
+        if (index > positions.Length - 1) return;
+        transform.LookAt(positions[index].position);
+        transform.Translate((positions[index].position - transform.position).normalized * Time.deltaTime * speed, Space.World);
         if (Vector3.Distance(positions[index].position, transform.position) < 0.2f)
         {
             index++;
