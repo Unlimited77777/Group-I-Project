@@ -205,8 +205,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255603
-  m_fontColor: {r: 0.95214605, g: 1, b: 0, a: 1}
+    rgba: 4278518015
+  m_fontColor: {r: 1, g: 0, b: 0.019385815, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -468,7 +468,7 @@ Transform:
   - {fileID: 8882565017210494201}
   - {fileID: 2552207989530647261}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &8880603105287302595
 MeshFilter:

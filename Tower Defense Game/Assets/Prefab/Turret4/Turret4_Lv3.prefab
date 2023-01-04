@@ -121,7 +121,7 @@ Transform:
   - {fileID: 259891918245279939}
   - {fileID: 1364290773606689221}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &279323213360758853
 MeshFilter:
@@ -551,8 +551,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278253814
-  m_fontColor: {r: 0.96470594, g: 0.9725491, b: 0, a: 1}
+    rgba: 4291297535
+  m_fontColor: {r: 1, g: 0, b: 0.78431374, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
