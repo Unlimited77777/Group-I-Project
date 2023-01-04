@@ -17606,14 +17606,14 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 1963857078541744, guid: d12e9c2e5f8ac5c47896a2b458732596, type: 3}
     count: 10
     rate: 1
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 1095249287d641e45a62c64825d6e89d, type: 3}
-    count: 2
+  - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
+    count: 5
     rate: 1
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 1095249287d641e45a62c64825d6e89d, type: 3}
-    count: 2
+  - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
+    count: 10
     rate: 1
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 1095249287d641e45a62c64825d6e89d, type: 3}
-    count: 2
+  - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
+    count: 5
     rate: 1
   START: {fileID: 545865489}
   waveRate: 3

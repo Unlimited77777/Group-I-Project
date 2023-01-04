@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18218672, g: 0.22788861, b: 0.30736658, a: 1}
+  m_IndirectSpecularColor: {r: 0.18218717, g: 0.22788945, b: 0.3073676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1795,7 +1795,7 @@ MonoBehaviour:
     costUpgrade: 30
     type: 0
   Turret2:
-    turretPrefab: {fileID: 1000013227101710, guid: ed4ef18f9780b3b41ac60f649439986b, type: 3}
+    turretPrefab: {fileID: 1314665628698371109, guid: 7b387be27affc44338376cd93c2a915a, type: 3}
     turretUpgradePrefab: {fileID: 1314665628698371109, guid: e091d26ca18f2a849ab04db8c834e351, type: 3}
     turretUpgradePrefab_Lv2: {fileID: 8883506045744411457, guid: 41428e5f3467efd4aa23a919c6ffb455, type: 3}
     cost: 100
@@ -1834,8 +1834,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 1095249287d641e45a62c64825d6e89d, type: 3}
-    count: 2
+  - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
+    count: 5
+    rate: 1
+  - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
+    count: 10
+    rate: 1
+  - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
+    count: 5
+    rate: 1
+  - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
+    count: 10
+    rate: 1
+  - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
+    count: 5
+    rate: 1
+  - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
+    count: 10
+    rate: 1
+  - enemyPrefab: {fileID: 1062015658370612, guid: 7708f923bd153024aae3b8bd650d3472, type: 3}
+    count: 5
+    rate: 1
+  - enemyPrefab: {fileID: 1062015658370612, guid: 7708f923bd153024aae3b8bd650d3472, type: 3}
+    count: 10
+    rate: 1
+  - enemyPrefab: {fileID: 1906374043378120, guid: ba0db41c461085e4ea75616490d9b538, type: 3}
+    count: 5
+    rate: 1
+  - enemyPrefab: {fileID: 1906374043378120, guid: ba0db41c461085e4ea75616490d9b538, type: 3}
+    count: 10
+    rate: 1
+  - enemyPrefab: {fileID: 1314043251266546, guid: 5a89b7b2625fd7547bada09016683cc9, type: 3}
+    count: 5
+    rate: 1
+  - enemyPrefab: {fileID: 1314043251266546, guid: 5a89b7b2625fd7547bada09016683cc9, type: 3}
+    count: 10
     rate: 1
   START: {fileID: 1880007293}
   waveRate: 3
@@ -7408,7 +7441,7 @@ MonoBehaviour:
     costUpgrade: 30
     type: 0
   Turret2:
-    turretPrefab: {fileID: 1000013227101710, guid: ed4ef18f9780b3b41ac60f649439986b, type: 3}
+    turretPrefab: {fileID: 1314665628698371109, guid: 7b387be27affc44338376cd93c2a915a, type: 3}
     turretUpgradePrefab: {fileID: 1314665628698371109, guid: e091d26ca18f2a849ab04db8c834e351, type: 3}
     turretUpgradePrefab_Lv2: {fileID: 8883506045744411457, guid: 41428e5f3467efd4aa23a919c6ffb455, type: 3}
     cost: 100
