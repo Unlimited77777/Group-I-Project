@@ -17684,7 +17684,7 @@ MonoBehaviour:
   selectedMapCubeMerge: {fileID: 0}
   moneyText: {fileID: 1121860009}
   moneyAnimator: {fileID: 1121860011}
-  money: 100000
+  money: 400
   sellprice: 0
 --- !u!114 &2007995380
 MonoBehaviour:
