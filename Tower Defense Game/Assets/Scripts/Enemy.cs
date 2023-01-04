@@ -16,11 +16,9 @@ public class Enemy : MonoBehaviour
     public int reward = 20;
     public Waypoints waypoint;
     public GameObject impactEffect;
-
     // Start is called before the first frame update
     void Start()
     {
-        
         positions = waypoint.positions;
         totalHp = hp;
         hpSlider = GetComponentInChildren<Slider>();

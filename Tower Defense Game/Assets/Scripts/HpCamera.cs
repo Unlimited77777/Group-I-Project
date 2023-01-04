@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
-public class CanvasCamera : MonoBehaviour
+public class HpCamera : MonoBehaviour
 {
-
     public Transform bannerLookTarget;
     //banner text component
-    public TMP_Text tmp_text_banner;
+    public Canvas hpSlider;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +17,6 @@ public class CanvasCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tmp_text_banner.transform.rotation = Quaternion.LookRotation(tmp_text_banner.transform.position - bannerLookTarget.position);
+        hpSlider.transform.rotation = Quaternion.LookRotation(hpSlider.transform.position - bannerLookTarget.position);
     }
 }
