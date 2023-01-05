@@ -6,10 +6,10 @@ using TMPro;
 
 public class liveui : MonoBehaviour
 {
+    //the text of player's lives
     public TMP_Text livesText;
-    // Start is called before the first frame update    
     
-    // Update is called once per frame
+    // Update player's lives once per frame
     void Update()
     {
         livesText.text = GameManager.lives + " Lives";

@@ -9,6 +9,7 @@ public class MapCube : MonoBehaviour
     public TurretData turretData;
     public GameObject currentTurret;
 
+    //use for build turret
     public void BuildTurret(TurretData turretData)
     {
         this.turretData = turretData;
@@ -16,13 +17,14 @@ public class MapCube : MonoBehaviour
         currentTurret = turretData.turretPrefab;
     }
 
+    //merge for turret
     public void MergeTurret()
-    {   
-        if(currentTurret != turretData.turretPrefab)
+    {
+        if(currentTurret != turretData.turretPrefab)//for level2 turret
         {
             MergeTurretLv2();
         }
-        else
+        else//for level 1 turret
         {
             Destroy(turretGo);
             turretGo = GameObject.Instantiate(turretData.turretUpgradePrefab, transform.position, Quaternion.identity);
@@ -31,6 +33,7 @@ public class MapCube : MonoBehaviour
         
     }
 
+    //use for merge the lv2 turret
     public void MergeTurretLv2()
     {   
         Destroy(turretGo);
@@ -38,6 +41,7 @@ public class MapCube : MonoBehaviour
         currentTurret = turretData.turretUpgradePrefab_Lv2;
     }
      
+    //destory the turret
     public void SellTurret()
     {
         Destroy(turretGo);

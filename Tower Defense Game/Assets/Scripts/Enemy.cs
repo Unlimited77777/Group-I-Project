@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     public int reward = 20;
     public Waypoints waypoint;
     public GameObject impactEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,9 +60,12 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        //get the damage when being attacked from turret and show the details of hp by a slider
         if (hp <= 0) return;
         hp -= damage;
         hpSlider.value = (float)hp / totalHp;
+
+        //die when hp<0
         if (hp <= 0)
         {
             Die();

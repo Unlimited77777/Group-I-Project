@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //destory the bullet if there is no enemy in the range of turret
         if(target == null)
         {
             Destroy(gameObject);
@@ -24,7 +25,8 @@ public class Bullet : MonoBehaviour
 
         Vector3 dir = target.position - transform.position;
         float distanceThisFrame = speed * Time.deltaTime;
-
+        
+        //attack enmey when enemy is in the range
         if(dir.magnitude <= distanceThisFrame)
         {
             HitTarget();
@@ -33,6 +35,7 @@ public class Bullet : MonoBehaviour
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
     }
 
+    //attack the enemy
     void HitTarget()
     {
         //Get Enemy Component

@@ -9,20 +9,24 @@ public class ButtonPause : MonoBehaviour
 {
     //the ButtonPauseMenu
     public GameObject ingameMenu;
+    //the map used for load game
     public string LoadMap;
-    public MapCube[] list;
-    public Enemy[] enemyList;
-    public BuildManager moneySystem;
-    public GameManager lives;
 
+    //pause the game
     public void OnPause(){
         Time.timeScale = 0;
+        //make the PauseMenu exist
         ingameMenu.SetActive(true);
     }
+
+    //resume the game
     public void OnResume(){
         Time.timeScale = 1f;
+        //hide the PauseMenu
         ingameMenu.SetActive(false);
     }
+
+    //restart the game
     public void OnRestart(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
@@ -40,28 +44,11 @@ public class ButtonPause : MonoBehaviour
 
     public void SaveGame()
     {
+        //create save and save the map data
         Save save = new Save();
         Scene scene = SceneManager.GetActiveScene();
         save.map = scene.name;
-        //save.money = moneySystem.money;
-        //save.lives = lives.live;
-        //foreach(Enemy enemy in enemyList)
-        //{
-        //    save.enemy.hp = enemy.hp;
-        //    save.enemy.speed = enemy.speed;
-        //}
-        //foreach (MapCube cube in list)
-        //{
-        //    if (cube != null)
-        //    {
-        //      save.turret.Add(cube);
-        //      save.tpositionX = Cubemap.positonX;
-        //      save.tpositionY = Cubemap.positonY;
-        //      save.tpositionZ = Cubemap.positonZ;
-        //    }
-        //}
-
-
+        
         BinaryFormatter bf = new BinaryFormatter();
 
         FileStream fileStream = File.Create(Application.persistentDataPath + "/Data.text");
@@ -80,18 +67,12 @@ public class ButtonPause : MonoBehaviour
 
             FileStream fileStream = File.Open(Application.persistentDataPath + "/Data.text", FileMode.Open);
 
-            Save save = bf.Deserialize(fileStream) as Save;//You have loaded your previous "save" object
+            Save save = bf.Deserialize(fileStream) as Save;//loaded your previous "save" object
             fileStream.Close();
 
             LoadMap = save.map;
             SceneManager.LoadScene(LoadMap);
             Time.timeScale = 1f;
-            moneySystem.money = save.money;
-            // for(int i = 0; i< save.turret.Count; i++)
-            // {
-            //    MapCube newTurret = save.turret[i];
-            //    newTurret.BuildTurret(newTurret.turretData);
-            // }
         }
         else
         {

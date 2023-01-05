@@ -80,6 +80,7 @@ public class Turret : MonoBehaviour
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
+        //call seek to find the enemy to shoot
         if (bullet != null)
         {
             bullet.Seek(target);

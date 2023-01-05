@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
     private EnemySpawner enemySpawner;
-    public Save save;
     
     private void Awake()
     {
@@ -21,12 +20,15 @@ public class GameManager : MonoBehaviour
         lives = start_lives;
         enemySpawner = GetComponent<EnemySpawner>();
     }
+
+    //show the win UI
     public void Win()
     {
         endUI.SetActive(true);
         endMessage.text = "You win";
     }
 
+    //show the lose UI and stop enemy
     public void Lose()
     {
         enemySpawner.Stop();

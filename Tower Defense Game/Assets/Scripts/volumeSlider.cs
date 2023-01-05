@@ -23,6 +23,7 @@ public class volumeSlider : MonoBehaviour
 
     }
 
+    //get the change of volume
     public void OnChangeVolume()
     {
         if (myToggle.isOn == true)

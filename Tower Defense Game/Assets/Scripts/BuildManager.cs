@@ -20,15 +20,15 @@ public class BuildManager : MonoBehaviour
     private TurretData selectedTurretData;
     //The current chosen turret by left button of the mouse which has been built
     public MapCube selectedMapCube;
-    //The current chosen turret by right button of the mouse which has been built
-    public MapCube selectedMapCubeMerge;
+    
 
 
     public Text moneyText;
     public Animator moneyAnimator;
     public int money = 500;
     public int sellprice;
-    public void UpdateMoney(int change)
+    
+    public void UpdateMoney(int change)//Update the money when the enemy died
     {
         money += change;
         moneyText.text = "$" + money;
@@ -132,7 +132,7 @@ public class BuildManager : MonoBehaviour
         }
     }
 
-    public void OnTurretRSelected(bool ison)
+    public void OnTurretRSelected(bool ison)//the build of turret button selected
     {
         Random rnd = new Random();
         int t = rnd.Next(1, 4);
@@ -155,7 +155,7 @@ public class BuildManager : MonoBehaviour
     }
 
 
-    public void OnSellSelected(bool ison)
+    public void OnSellSelected(bool ison)//the sell button selected
     {
         if (ison)
         {
@@ -163,7 +163,7 @@ public class BuildManager : MonoBehaviour
         }
     }
 
-    public void OnMergeSelected(bool ison)
+    public void OnMergeSelected(bool ison)//the merge button selected
     {
         if (ison)
         {
