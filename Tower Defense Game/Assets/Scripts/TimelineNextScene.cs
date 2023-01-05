@@ -9,22 +9,16 @@ public class TimelineNextScene : MonoBehaviour
     [SerializeField] private string nextScene;
     [SerializeField] PlayableDirector currentDirector = null;
     [SerializeField] private float newTime;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //StartCoroutine(NextScene());
-    }
 
     public void skipCutScene()
     {
-
+        //if you press skip button, it will just skip to the time before the signal is emitted
         currentDirector.time = newTime;
-        //currentDirector.Play();
-        //SceneManager.LoadScene("Map1-easy");
     }
 
     public void loadLevel()
     {
+        //this just loads the next scene after the tutorial ends
         SceneManager.LoadScene(nextScene);
     }
 

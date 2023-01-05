@@ -11,6 +11,8 @@ public class volumeSlider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //playerPrefs stores data between game sessions
+        //if theres no volume set, then  it'll set the slider to 1
         if (!PlayerPrefs.HasKey("musicVolume"))
         {
             PlayerPrefs.SetFloat("musicVolume", 1);
@@ -24,6 +26,7 @@ public class volumeSlider : MonoBehaviour
     }
 
     //get the change of volume
+    //user can only change the volume if music isn't muted
     public void OnChangeVolume()
     {
         if (myToggle.isOn == true)
@@ -47,7 +50,7 @@ public class volumeSlider : MonoBehaviour
             OnChangeVolume();
         }
     }
-    //playerPrefs to save their prefernces
+    
     private void Load()
     {
         //sets volume slider to variable that was saved as musicVolume
@@ -55,6 +58,7 @@ public class volumeSlider : MonoBehaviour
     }
     private void Save()
     {
+        //saves player prefs as current volume slider value
         PlayerPrefs.SetFloat("musicVolume", volumeSlide.value);
     }
 }
