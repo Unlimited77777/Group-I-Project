@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92300152adcfc846a61a96bdba464a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
   hp: 250
   reward: 10
   waypoint: {fileID: 0}
