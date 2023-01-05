@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 99
+  controlID: 102
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,10 +330,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 133.40002}
-    m_SelectedIDs: e06c0000
-    m_LastClickedID: 27872
-    m_ExpandedIDs: 00000000ae6c0000ce6c00001a3f010000ca9a3b
+    scrollPos: {x: 0, y: 361.40002}
+    m_SelectedIDs: ea6c0000
+    m_LastClickedID: 27882
+    m_ExpandedIDs: 00000000c66c0000c86c0000ca6c0000e86c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae6c0000
+    m_ExpandedIDs: 00000000c66c0000c86c0000ca6c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -452,7 +452,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 1296
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -489,9 +489,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fc6c0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: d2c1feff40cafeffd8cdfeffa6d6feffc0dafeffd4e3feffb4e7feff60fefeff5008ffff100fffffa018ffffbc21ffff7a26ffff5430ffff1a47ffff304cffff5256ffff8a5fffff4c68ffff506cffff0c77ffff1a7cffffae84ffffe48effffae93ffff1a94ffffc49effffb4adffffacc2ffffd8d7ffff86e2ffffdee7ffffc0f1ffffe0faffff726e0000da780000a0800000248f000066c000005ac800003ed100005ad2000034e00000f6e0000020e7000048f1000094f6000096f7000030fb0000ca0a010010110100e01b010092250100c42f0100d8360100204601006c50010042580100346201008c710100d0770100a0820100e8a10100c4a50100a6af0100ecb501001cc0010026c30100
+      m_SelectedIDs: f8710100
+      m_LastClickedID: 94712
+      m_ExpandedIDs: 9844ffff764dffffc075ffff1281ffff8cb9ffff14fbffffa2640000e26400001ab200005ab20000000a0100400a0100c214010050690100d0730100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

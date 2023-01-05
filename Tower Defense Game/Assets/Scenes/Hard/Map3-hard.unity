@@ -1795,7 +1795,7 @@ MonoBehaviour:
     costUpgrade: 30
     type: 0
   Turret2:
-    turretPrefab: {fileID: 1000013227101710, guid: ed4ef18f9780b3b41ac60f649439986b, type: 3}
+    turretPrefab: {fileID: 1314665628698371109, guid: 7b387be27affc44338376cd93c2a915a, type: 3}
     turretUpgradePrefab: {fileID: 1314665628698371109, guid: e091d26ca18f2a849ab04db8c834e351, type: 3}
     turretUpgradePrefab_Lv2: {fileID: 8883506045744411457, guid: 41428e5f3467efd4aa23a919c6ffb455, type: 3}
     cost: 100
@@ -1819,7 +1819,7 @@ MonoBehaviour:
   selectedMapCubeMerge: {fileID: 0}
   moneyText: {fileID: 1760451871}
   moneyAnimator: {fileID: 1760451870}
-  money: 400
+  money: 0
   sellprice: 0
 --- !u!114 &183571499
 MonoBehaviour:
@@ -7453,7 +7453,7 @@ MonoBehaviour:
     costUpgrade: 30
     type: 0
   Turret2:
-    turretPrefab: {fileID: 1000013227101710, guid: ed4ef18f9780b3b41ac60f649439986b, type: 3}
+    turretPrefab: {fileID: 1314665628698371109, guid: 7b387be27affc44338376cd93c2a915a, type: 3}
     turretUpgradePrefab: {fileID: 1314665628698371109, guid: e091d26ca18f2a849ab04db8c834e351, type: 3}
     turretUpgradePrefab_Lv2: {fileID: 8883506045744411457, guid: 41428e5f3467efd4aa23a919c6ffb455, type: 3}
     cost: 100
@@ -7477,7 +7477,7 @@ MonoBehaviour:
   selectedMapCubeMerge: {fileID: 0}
   moneyText: {fileID: 1760451871}
   moneyAnimator: {fileID: 1760451870}
-  money: 400
+  money: 800
   sellprice: 0
 --- !u!114 &818014037
 MonoBehaviour:
@@ -16226,7 +16226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.047169805, g: 0.045167312, b: 0.045167312, a: 1}
+  m_Color: {r: 0.9811321, g: 0.9570666, b: 0.9570666, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16246,7 +16246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $ 400
+  m_Text: $ 800
 --- !u!222 &1760451872
 CanvasRenderer:
   m_ObjectHideFlags: 0
