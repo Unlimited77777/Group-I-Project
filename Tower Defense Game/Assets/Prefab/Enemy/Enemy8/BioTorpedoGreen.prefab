@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
-  hp: 400
+  hp: 500
   reward: 20
   waypoint: {fileID: 0}
   impactEffect: {fileID: 7690821285200560781, guid: fc8e2cfb824711541919110eb001af60, type: 3}
