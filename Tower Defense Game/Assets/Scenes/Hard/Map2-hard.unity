@@ -3256,7 +3256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 758b03204b63a08408494f4b3c0bab09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
+  maxSpeed: 10
   acceleration: 10
   damping: 15
   stepSize: 1
@@ -9643,24 +9643,31 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
     count: 10
     rate: 1
+    reward: 0
   - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
     count: 20
     rate: 1
+    reward: 0
   - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
     count: 10
     rate: 1
+    reward: 0
   - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
     count: 20
     rate: 1
+    reward: 0
   - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
     count: 10
     rate: 1
+    reward: 0
   - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
     count: 20
     rate: 1
+    reward: 0
   - enemyPrefab: {fileID: 1062015658370612, guid: 7708f923bd153024aae3b8bd650d3472, type: 3}
     count: 10
     rate: 1
+    reward: 0
   START: {fileID: 365246456}
   waveRate: 3
   waypoint: {fileID: 959339882}

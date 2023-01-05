@@ -10,9 +10,11 @@ public class EnemySpawner : MonoBehaviour
     public float waveRate = 0.2f;
     private Coroutine coroutine;
     public Waypoints waypoint;
+    private BuildManager moneyManager;
     void Start()
     {
         coroutine = StartCoroutine(SpawnEnemy());
+        moneyManager = GameObject.Find("wave").GetComponent<BuildManager>();
     }
     public void Stop()
     {
@@ -34,6 +36,7 @@ public class EnemySpawner : MonoBehaviour
             {
                 yield return 0;
             }
+            moneyManager.UpdateMoney(wave.reward);
             yield return new WaitForSeconds(waveRate);
         }
         while (EnemyAlive > 0)

@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour
     public int hp = 150;
     private int totalHp;
     private Slider hpSlider;
-    private BuildManager moneyManager;
     private Transform[] positions;
     private int index = 0;
     public int reward = 20;
@@ -22,7 +21,6 @@ public class Enemy : MonoBehaviour
         positions = waypoint.positions;
         totalHp = hp;
         hpSlider = GetComponentInChildren<Slider>();
-        moneyManager = GameObject.Find("wave").GetComponent<BuildManager>();
 
     }
 
@@ -75,7 +73,6 @@ public class Enemy : MonoBehaviour
         GameObject effect = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effect, 2f);
         Destroy(this.gameObject);
-        moneyManager.UpdateMoney(reward);
     }
     
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8098,7 +8098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 758b03204b63a08408494f4b3c0bab09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
+  maxSpeed: 10
   acceleration: 10
   damping: 15
   stepSize: 1
@@ -17461,18 +17461,23 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 1048570700629992, guid: 7fd4adaeaa97c7e49b03af4ddb6dcc37, type: 3}
     count: 10
     rate: 1
+    reward: 0
   - enemyPrefab: {fileID: 1048570700629992, guid: 7fd4adaeaa97c7e49b03af4ddb6dcc37, type: 3}
     count: 15
     rate: 1
+    reward: 0
   - enemyPrefab: {fileID: 1963857078541744, guid: d12e9c2e5f8ac5c47896a2b458732596, type: 3}
     count: 10
     rate: 1
+    reward: 0
   - enemyPrefab: {fileID: 1963857078541744, guid: d12e9c2e5f8ac5c47896a2b458732596, type: 3}
     count: 15
     rate: 1
+    reward: 0
   - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
     count: 5
     rate: 1
+    reward: 0
   START: {fileID: 545865489}
   waveRate: 3
   waypoint: {fileID: 1678103469}
