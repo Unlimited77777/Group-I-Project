@@ -23,4 +23,8 @@ You will win if you clear all enemy waves or do not lose all lives and you will 
 
 https://assetstore.unity.com/packages/3d/props/weapons/sci-fi-turrets-cannon-69615#description
 https://assetstore.unity.com/packages/3d/vehicles/space/alien-ships-pack-131137
-
+https://assetstore.unity.com/packages/2d/gui/sci-fi-gui-skin-15606
+https://assetstore.unity.com/packages/3d/environments/sci-fi/obligatory-sci-fi-corridor-vol-1-85445
+https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096#content
+https://assetstore.unity.com/packages/2d/textures-materials/dynamic-space-background-lite-104606
+https://assetstore.unity.com/packages/audio/music/space-game-bgm-2-169782
