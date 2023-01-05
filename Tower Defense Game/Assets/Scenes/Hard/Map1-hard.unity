@@ -9262,7 +9262,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $ 500
+  m_Text: $ 400
 --- !u!222 &1121860010
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17459,25 +17459,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemyPrefab: {fileID: 1048570700629992, guid: 7fd4adaeaa97c7e49b03af4ddb6dcc37, type: 3}
-    count: 10
+    count: 20
     rate: 1
-    reward: 0
+    reward: 300
   - enemyPrefab: {fileID: 1048570700629992, guid: 7fd4adaeaa97c7e49b03af4ddb6dcc37, type: 3}
-    count: 20
+    count: 30
     rate: 1
-    reward: 0
-  - enemyPrefab: {fileID: 1963857078541744, guid: d12e9c2e5f8ac5c47896a2b458732596, type: 3}
-    count: 10
-    rate: 1
-    reward: 0
+    reward: 300
   - enemyPrefab: {fileID: 1963857078541744, guid: d12e9c2e5f8ac5c47896a2b458732596, type: 3}
     count: 20
     rate: 1
-    reward: 0
+    reward: 300
+  - enemyPrefab: {fileID: 1963857078541744, guid: d12e9c2e5f8ac5c47896a2b458732596, type: 3}
+    count: 30
+    rate: 1
+    reward: 300
   - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
-    count: 10
+    count: 20
     rate: 1
-    reward: 0
+    reward: 300
   START: {fileID: 545865489}
   waveRate: 3
   waypoint: {fileID: 1678103469}
@@ -17547,7 +17547,7 @@ MonoBehaviour:
   selectedMapCubeMerge: {fileID: 0}
   moneyText: {fileID: 1121860009}
   moneyAnimator: {fileID: 1121860011}
-  money: 500
+  money: 400
   sellprice: 0
 --- !u!114 &2007995380
 MonoBehaviour:

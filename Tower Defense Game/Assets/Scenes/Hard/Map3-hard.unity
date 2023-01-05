@@ -1764,7 +1764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endUI: {fileID: 2146158169}
   endMessage: {fileID: 1321044146}
-  start_lives: 30
+  start_lives: 15
   save:
     map: 
     money: 0
@@ -1819,7 +1819,7 @@ MonoBehaviour:
   selectedMapCubeMerge: {fileID: 0}
   moneyText: {fileID: 1760451871}
   moneyAnimator: {fileID: 1760451870}
-  money: 500
+  money: 400
   sellprice: 0
 --- !u!114 &183571499
 MonoBehaviour:
@@ -1834,10 +1834,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemyPrefab: {fileID: 6695694329991288249, guid: 1095249287d641e45a62c64825d6e89d, type: 3}
-    count: 2
+  - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
+    count: 20
     rate: 1
-    reward: 0
+    reward: 150
+  - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
+    count: 30
+    rate: 1
+    reward: 150
+  - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
+    count: 20
+    rate: 1
+    reward: 150
+  - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
+    count: 30
+    rate: 1
+    reward: 150
+  - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
+    count: 20
+    rate: 1
+    reward: 150
+  - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
+    count: 30
+    rate: 1
+    reward: 150
+  - enemyPrefab: {fileID: 1062015658370612, guid: 7708f923bd153024aae3b8bd650d3472, type: 3}
+    count: 20
+    rate: 1
+    reward: 150
+  - enemyPrefab: {fileID: 1062015658370612, guid: 7708f923bd153024aae3b8bd650d3472, type: 3}
+    count: 30
+    rate: 1
+    reward: 150
+  - enemyPrefab: {fileID: 1906374043378120, guid: ba0db41c461085e4ea75616490d9b538, type: 3}
+    count: 20
+    rate: 1
+    reward: 150
+  - enemyPrefab: {fileID: 1906374043378120, guid: ba0db41c461085e4ea75616490d9b538, type: 3}
+    count: 30
+    rate: 1
+    reward: 150
+  - enemyPrefab: {fileID: 1314043251266546, guid: 5a89b7b2625fd7547bada09016683cc9, type: 3}
+    count: 20
+    rate: 1
+    reward: 150
+  - enemyPrefab: {fileID: 1314043251266546, guid: 5a89b7b2625fd7547bada09016683cc9, type: 3}
+    count: 30
+    rate: 1
+    reward: 150
   START: {fileID: 1880007293}
   waveRate: 3
   waypoint: {fileID: 212089059}
@@ -7378,7 +7422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endUI: {fileID: 2146158169}
   endMessage: {fileID: 1321044146}
-  start_lives: 30
+  start_lives: 15
   save:
     map: 
     money: 0
@@ -7433,7 +7477,7 @@ MonoBehaviour:
   selectedMapCubeMerge: {fileID: 0}
   moneyText: {fileID: 1760451871}
   moneyAnimator: {fileID: 1760451870}
-  money: 500
+  money: 400
   sellprice: 0
 --- !u!114 &818014037
 MonoBehaviour:
@@ -7449,53 +7493,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
-    count: 10
+    count: 20
     rate: 1
-    reward: 0
+    reward: 150
   - enemyPrefab: {fileID: 1960062034117444, guid: 11ee21d98f35ee34488553b3a83e7d5a, type: 3}
-    count: 20
+    count: 30
     rate: 1
-    reward: 0
-  - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
-    count: 10
-    rate: 1
-    reward: 0
+    reward: 150
   - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
     count: 20
     rate: 1
-    reward: 0
+    reward: 150
+  - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
+    count: 30
+    rate: 1
+    reward: 150
   - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
-    count: 10
+    count: 20
     rate: 1
-    reward: 0
+    reward: 150
   - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
-    count: 20
+    count: 30
     rate: 1
-    reward: 0
-  - enemyPrefab: {fileID: 1062015658370612, guid: 7708f923bd153024aae3b8bd650d3472, type: 3}
-    count: 10
-    rate: 1
-    reward: 0
+    reward: 150
   - enemyPrefab: {fileID: 1062015658370612, guid: 7708f923bd153024aae3b8bd650d3472, type: 3}
     count: 20
     rate: 1
-    reward: 0
-  - enemyPrefab: {fileID: 1906374043378120, guid: ba0db41c461085e4ea75616490d9b538, type: 3}
-    count: 10
+    reward: 150
+  - enemyPrefab: {fileID: 1062015658370612, guid: 7708f923bd153024aae3b8bd650d3472, type: 3}
+    count: 30
     rate: 1
-    reward: 0
+    reward: 150
   - enemyPrefab: {fileID: 1906374043378120, guid: ba0db41c461085e4ea75616490d9b538, type: 3}
     count: 20
     rate: 1
-    reward: 0
-  - enemyPrefab: {fileID: 1314043251266546, guid: 5a89b7b2625fd7547bada09016683cc9, type: 3}
-    count: 10
+    reward: 150
+  - enemyPrefab: {fileID: 1906374043378120, guid: ba0db41c461085e4ea75616490d9b538, type: 3}
+    count: 30
     rate: 1
-    reward: 0
+    reward: 150
   - enemyPrefab: {fileID: 1314043251266546, guid: 5a89b7b2625fd7547bada09016683cc9, type: 3}
     count: 20
     rate: 1
-    reward: 0
+    reward: 150
+  - enemyPrefab: {fileID: 1314043251266546, guid: 5a89b7b2625fd7547bada09016683cc9, type: 3}
+    count: 30
+    rate: 1
+    reward: 150
   START: {fileID: 1330261932}
   waveRate: 3
   waypoint: {fileID: 1355879801}
@@ -16202,7 +16246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $ 500
+  m_Text: $ 400
 --- !u!222 &1760451872
 CanvasRenderer:
   m_ObjectHideFlags: 0
