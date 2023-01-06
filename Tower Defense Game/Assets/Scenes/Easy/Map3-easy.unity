@@ -7897,7 +7897,7 @@ MonoBehaviour:
   selectedMapCube: {fileID: 0}
   moneyText: {fileID: 1760451871}
   moneyAnimator: {fileID: 1760451870}
-  money: 400
+  money: 800
   sellprice: 0
 --- !u!114 &818014037
 MonoBehaviour:
@@ -7961,7 +7961,7 @@ MonoBehaviour:
     rate: 1
     reward: 400
   START: {fileID: 491841083}
-  waveRate: 3
+  waveRate: 10
   waypoint: {fileID: 1355879801}
 --- !u!1001 &825180286
 PrefabInstance:
@@ -10277,7 +10277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1081332885
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11145,8 +11145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -357, y: 156}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -728.05664, y: 156}
+  m_SizeDelta: {x: 175.8867, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1167078125
 MonoBehaviour:
@@ -11244,7 +11244,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -38.085205, w: 0}
+  m_margin: {x: 0, y: 0, z: 3.0463257, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -16856,7 +16856,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $ 400
+  m_Text: $ 800
 --- !u!222 &1760451872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20203,8 +20203,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135950820}
-  m_LocalRotation: {x: 0.35483682, y: -0, z: -0, w: 0.9349283}
-  m_LocalPosition: {x: 47, y: 42, z: -15}
+  m_LocalRotation: {x: 0.5037097, y: 0, z: 0, w: 0.86387306}
+  m_LocalPosition: {x: 41.08, y: 52.08, z: 1.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

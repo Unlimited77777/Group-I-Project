@@ -2015,7 +2015,7 @@ MonoBehaviour:
     rate: 1
     reward: 150
   START: {fileID: 985942464}
-  waveRate: 3
+  waveRate: 5
   waypoint: {fileID: 212089059}
 --- !u!1001 &206277516
 PrefabInstance:
@@ -7612,7 +7612,7 @@ MonoBehaviour:
     rate: 1
     reward: 150
   START: {fileID: 491841083}
-  waveRate: 3
+  waveRate: 5
   waypoint: {fileID: 1355879801}
 --- !u!1001 &825180286
 PrefabInstance:
@@ -11004,8 +11004,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 185}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -728.05664, y: 156}
+  m_SizeDelta: {x: 175.8867, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1167078125
 MonoBehaviour:
@@ -20203,14 +20203,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135950820}
-  m_LocalRotation: {x: 0.35483682, y: -0, z: -0, w: 0.9349283}
-  m_LocalPosition: {x: 47, y: 42, z: -15}
+  m_LocalRotation: {x: 0.5037097, y: -0, z: -0, w: 0.86387306}
+  m_LocalPosition: {x: 41.08, y: 52.08, z: 1.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 41.567, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 60.491, y: 0, z: 0}
 --- !u!82 &2135950824
 AudioSource:
   m_ObjectHideFlags: 0

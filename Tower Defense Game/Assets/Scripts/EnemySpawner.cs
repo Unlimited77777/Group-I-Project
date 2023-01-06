@@ -22,6 +22,7 @@ public class EnemySpawner : MonoBehaviour
     }
     IEnumerator SpawnEnemy()
     {
+        yield return new WaitForSeconds(waveRate);
         foreach(Wave wave in waves)
         {
             for(int i = 0; i < wave.count; i++)

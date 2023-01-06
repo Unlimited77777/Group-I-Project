@@ -49,7 +49,6 @@ public class ViewController : MonoBehaviour
     //used to update the position of the camera base object.
     private Vector3 targetPosition;
 
-    private float zoomHeight;
 
     //used to track and maintain velocity w/o a rigidbody
     private Vector3 horizontalVelocity;
@@ -79,21 +78,18 @@ public class ViewController : MonoBehaviour
     private void OnEnable()
     {
         cameraTransform.LookAt(this.transform);
-        zoomHeight = cameraTransform.localPosition.y;
 
 
         lastPosition = this.transform.position;
 
         movement = cameraActions.Camera.MoveCamera;
         cameraActions.Camera.RotateCamera.performed += RotateCamera;
-        cameraActions.Camera.ZoomCamera.performed += ZoomCamera;
         cameraActions.Camera.Enable();
     }
 
     private void OnDisable()
     {
         cameraActions.Camera.RotateCamera.performed -= RotateCamera;
-        cameraActions.Camera.ZoomCamera.performed -= ZoomCamera;
         cameraActions.Camera.Disable();
     }
 
@@ -164,33 +160,10 @@ public class ViewController : MonoBehaviour
         transform.rotation = Quaternion.Euler(cameraTransform.localPosition.x, inputValue * maxRotationSpeed + transform.rotation.eulerAngles.y, 0f);
     }
 
-    private void ZoomCamera(InputAction.CallbackContext obj)
-    {
-        float inputValue = -obj.ReadValue<Vector2>().y / 100f;
-
-        if (Mathf.Abs(inputValue) > 0.1f)
-        {
-            zoomHeight = cameraTransform.localPosition.y + inputValue * stepSize;
-
-            if (zoomHeight < minHeight)
-            {
-                zoomHeight = minHeight;
-            }
-            else if (zoomHeight > maxHeight)
-            {
-                zoomHeight = maxHeight;
-            }
-        }
-    }
+    
 
     private void UpdateCameraPosition()
     {
-        //set zoom target
-        Vector3 zoomTarget = new Vector3(cameraTransform.localPosition.x, zoomHeight, cameraTransform.localPosition.z);
-        //add vector for forward/backward zoom
-        zoomTarget -= zoomSpeed * (zoomHeight - cameraTransform.localPosition.y) * Vector3.forward;
-
-        cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, zoomTarget, Time.deltaTime * zoomDampening);
         cameraTransform.LookAt(this.transform);
     }
 
