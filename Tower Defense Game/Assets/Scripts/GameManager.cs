@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject endUI;
+    public GameObject winUI;
+    public GameObject loseUI;
     public Text endMessage;
     public static int lives;
     public int start_lives = 30;
@@ -24,7 +25,7 @@ public class GameManager : MonoBehaviour
     //show the win UI
     public void Win()
     {
-        endUI.SetActive(true);
+        winUI.SetActive(true);
         endMessage.text = "You win";
     }
 
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour
     public void Lose()
     {
         enemySpawner.Stop();
-        endUI.SetActive(true);
+        loseUI.SetActive(true);
         endMessage.text = "You lose";
     }
 
