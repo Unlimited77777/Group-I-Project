@@ -10991,9 +10991,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1814967121}
+      - m_Target: {fileID: 1814967124}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnMergeSelected
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
