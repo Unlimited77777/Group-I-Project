@@ -10002,23 +10002,23 @@ MonoBehaviour:
     rate: 1
     reward: 300
   - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
-    count: 20
-    rate: 1
-    reward: 300
-  - enemyPrefab: {fileID: 1458391615630120, guid: 0594e9eda693f48408ba9ed89c2de623, type: 3}
-    count: 30
+    count: 40
     rate: 1
     reward: 300
   - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
-    count: 20
-    rate: 1
-    reward: 300
-  - enemyPrefab: {fileID: 1089099125859580, guid: cff99a49e2970de4b9bb287a3baf6b5a, type: 3}
-    count: 30
+    count: 50
     rate: 1
     reward: 300
   - enemyPrefab: {fileID: 1062015658370612, guid: 7708f923bd153024aae3b8bd650d3472, type: 3}
-    count: 20
+    count: 50
+    rate: 1
+    reward: 300
+  - enemyPrefab: {fileID: 1906374043378120, guid: ba0db41c461085e4ea75616490d9b538, type: 3}
+    count: 50
+    rate: 1
+    reward: 300
+  - enemyPrefab: {fileID: 1314043251266546, guid: 5a89b7b2625fd7547bada09016683cc9, type: 3}
+    count: 50
     rate: 1
     reward: 300
   START: {fileID: 1850644623}

@@ -7548,7 +7548,7 @@ MonoBehaviour:
   selectedMapCube: {fileID: 0}
   moneyText: {fileID: 1760451871}
   moneyAnimator: {fileID: 1760451870}
-  money: 800
+  money: 600
   sellprice: 0
 --- !u!114 &818014037
 MonoBehaviour:
@@ -16721,7 +16721,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $ 800
+  m_Text: $ 600
 --- !u!222 &1760451872
 CanvasRenderer:
   m_ObjectHideFlags: 0
