@@ -2260,7 +2260,7 @@ MonoBehaviour:
     rate: 1
     reward: 0
   START: {fileID: 985942464}
-  waveRate: 3
+  waveRate: 10
   waypoint: {fileID: 212089059}
 --- !u!1001 &206277516
 PrefabInstance:
