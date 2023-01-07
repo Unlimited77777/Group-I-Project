@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Others/MainMenu.unity
+    guid: cb693007ece71b34e8c374e74ed25bfd
+  - enabled: 1
+    path: Assets/Scenes/Easy/Map1-cutscene.unity
+    guid: 36226fb64621c43c589e4e1be6225333
+  - enabled: 1
+    path: Assets/Scenes/Medium/Map1-cutscene 2.unity
+    guid: aa88a14fd054a466582b9ddf1e05dfd3
+  - enabled: 1
+    path: Assets/Scenes/Hard/Map1-cutscene 1.unity
+    guid: 49d356e5297c0455fb01e0817574b5f9
+  - enabled: 1
+    path: Assets/Scenes/Easy/Map1-easy.unity
+    guid: 31609da6f076fe14ea055bab94c375b9
+  - enabled: 1
+    path: Assets/Scenes/Easy/Map2-easy.unity
+    guid: 2bfeeaec743baa44dbd5c84682b8b5c6
+  - enabled: 1
+    path: Assets/Scenes/Easy/Map3-easy.unity
+    guid: 132e37efd5df3db42a0372c9a0b7fbf3
+  - enabled: 1
+    path: Assets/Scenes/Easy/E-Story1.unity
+    guid: eb334f3b7d60e8d469663f12f6bde0c9
+  - enabled: 1
+    path: Assets/Scenes/Easy/E-Story2.unity
+    guid: 90bcb0f892008b743a23cdb6cd49f7e4
+  - enabled: 1
+    path: Assets/Scenes/Easy/E-Story3.unity
+    guid: 2367c8fd6052a7b449e43334c6e7583c
+  - enabled: 1
+    path: Assets/Scenes/Easy/E-Story4.unity
+    guid: 74729d4aeacb1f84dbb94b3a53ef56ab
+  - enabled: 1
+    path: Assets/Scenes/Others/Story-end1.unity
+    guid: 245db639be3c4d8429f5a4fe47c2a7ee
+  - enabled: 1
+    path: Assets/Scenes/Others/Story-end2.unity
+    guid: 56e77dd1c63db3c46884e28be4fdc885
+  - enabled: 1
+    path: Assets/Scenes/Medium/Map1-medium.unity
+    guid: b976979091294a646a794a0a6a0f40a4
+  - enabled: 1
+    path: Assets/Scenes/Hard/Map1-hard.unity
+    guid: b393779c98a0b8549be88e5d9043c324
+  - enabled: 1
+    path: Assets/Scenes/Medium/Map2-medium.unity
+    guid: b03c65857a784cf4a97d363ea1c950e3
+  - enabled: 1
+    path: Assets/Scenes/Hard/Map2-hard.unity
+    guid: 88324de2becaa9446a78ee33ed275d75
+  - enabled: 1
+    path: Assets/Scenes/Hard/Map3-hard.unity
+    guid: e52533f1e50f55e4b93f97392692c87c
+  - enabled: 1
+    path: Assets/Scenes/Medium/Map3-medium.unity
+    guid: 59f9f15e324470a419db8cdc39726376
+  - enabled: 1
+    path: Assets/Scenes/Hard/H-Story1.unity
+    guid: b288f49b35e713e46ad4b56f6dd4894c
+  - enabled: 1
+    path: Assets/Scenes/Hard/H-Story2.unity
+    guid: fda2025ccb7916546a81dc06e74cd9ac
+  - enabled: 1
+    path: Assets/Scenes/Hard/H-Story3.unity
+    guid: 38a642c0d8efceb4f933e7dec41ab2f2
+  - enabled: 1
+    path: Assets/Scenes/Hard/H-Story4.unity
+    guid: 135ce10c1a5991b499e1700e42dc9b1c
+  - enabled: 1
+    path: Assets/Scenes/Medium/M-Story1.unity
+    guid: 4b59d4603e1c3ee48823a3ca271eb0d6
+  - enabled: 1
+    path: Assets/Scenes/Medium/M-Story2.unity
+    guid: d7d02ccc155c73f4792bbbeeddffb568
+  - enabled: 1
+    path: Assets/Scenes/Medium/M-Story3.unity
+    guid: f75b6719df6578244acb7d4312ecc037
+  - enabled: 1
+    path: Assets/Scenes/Medium/M-Story4.unity
+    guid: ab73afad9d348bc4bbcbdba7b2e62e8d
+  m_configObjects: {}
