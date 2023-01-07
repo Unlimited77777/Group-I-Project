@@ -9,9 +9,6 @@ using Random = System.Random;
 public class BuildManager : MonoBehaviour
 {
     public TurretData Turret0;
-    public TurretData Turret1;
-    public TurretData Turret2;
-    public TurretData Turret3;
     public TurretData Merge;
     public TurretData[] turrets = new TurretData[3];
     
@@ -75,18 +72,6 @@ public class BuildManager : MonoBehaviour
                         {
                             //can create
                             //According to the random integer t to choose the turret randomly
-                            // if (t == 1)
-                            // {
-                            //     selectedTurretData = Turret1;
-                            // }
-                            // else if (t == 2)
-                            // {
-                            //     selectedTurretData = Turret2;
-                            // }
-                            // else
-                            // {
-                            //     selectedTurretData = Turret3;
-                            // }
                             if (money >= selectedTurretData.cost)
                             {
                                 UpdateMoney(-selectedTurretData.cost);
@@ -146,18 +131,6 @@ public class BuildManager : MonoBehaviour
         if(ison)
         {
             //The first turret we choose is also random
-            // if(t == 1)
-            // {
-            //     selectedTurretData = Turret1;
-            // }
-            // else if(t == 2)
-            // {
-            //     selectedTurretData = Turret2;
-            // }
-            // else
-            // {
-            //     selectedTurretData = Turret3;
-            // }
             selectedTurretData = turrets[random];
         }
     }
