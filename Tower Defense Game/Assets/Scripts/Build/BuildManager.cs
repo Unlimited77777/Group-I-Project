@@ -13,6 +13,7 @@ public class BuildManager : MonoBehaviour
     public TurretData Turret2;
     public TurretData Turret3;
     public TurretData Merge;
+    public TurretData[] turrets = new TurretData[3];
     
 
 
@@ -20,7 +21,8 @@ public class BuildManager : MonoBehaviour
     private TurretData selectedTurretData;
     //The current chosen turret by left button of the mouse which has been built
     public MapCube selectedMapCube;
-    
+    //Random number
+    public int random;
 
 
     public Text moneyText;
@@ -28,6 +30,8 @@ public class BuildManager : MonoBehaviour
     public int money = 500;
     public int sellprice;
     
+    
+
     public void UpdateMoney(int change)//Update the money when the enemy died
     {
         money += change;
@@ -42,8 +46,7 @@ public class BuildManager : MonoBehaviour
             {
                 //the build of turret
                 //Create a random integer to controll the type of turret
-                Random rnd = new Random();
-                int t = rnd.Next(1, 4);
+                
                 Ray ray = Camera.main.ScreenPointToRay(mousePosition);
                 RaycastHit hit;
                 bool isCollider = Physics.Raycast(ray,out hit, 2000, LayerMask.GetMask("MapCube"));
@@ -72,22 +75,26 @@ public class BuildManager : MonoBehaviour
                         {
                             //can create
                             //According to the random integer t to choose the turret randomly
-                            if (t == 1)
-                            {
-                                selectedTurretData = Turret1;
-                            }
-                            else if (t == 2)
-                            {
-                                selectedTurretData = Turret2;
-                            }
-                            else
-                            {
-                                selectedTurretData = Turret3;
-                            }
+                            // if (t == 1)
+                            // {
+                            //     selectedTurretData = Turret1;
+                            // }
+                            // else if (t == 2)
+                            // {
+                            //     selectedTurretData = Turret2;
+                            // }
+                            // else
+                            // {
+                            //     selectedTurretData = Turret3;
+                            // }
                             if (money >= selectedTurretData.cost)
                             {
                                 UpdateMoney(-selectedTurretData.cost);
                                 mapCube.BuildTurret(selectedTurretData);
+                                Random rnd = new Random();
+                                random = rnd.Next(0, turrets.Length);
+                                selectedTurretData = turrets[random];
+                                print(random);
                             }
                             else//do not have enough money
                             {
@@ -135,22 +142,23 @@ public class BuildManager : MonoBehaviour
     public void OnTurretRSelected(bool ison)//the build of turret button selected
     {
         Random rnd = new Random();
-        int t = rnd.Next(1, 4);
+        int random = rnd.Next(0, turrets.Length);
         if(ison)
         {
             //The first turret we choose is also random
-            if(t == 1)
-            {
-                selectedTurretData = Turret1;
-            }
-            else if(t == 2)
-            {
-                selectedTurretData = Turret2;
-            }
-            else
-            {
-                selectedTurretData = Turret3;
-            }
+            // if(t == 1)
+            // {
+            //     selectedTurretData = Turret1;
+            // }
+            // else if(t == 2)
+            // {
+            //     selectedTurretData = Turret2;
+            // }
+            // else
+            // {
+            //     selectedTurretData = Turret3;
+            // }
+            selectedTurretData = turrets[random];
         }
     }
 
