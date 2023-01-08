@@ -28,3 +28,5 @@ https://assetstore.unity.com/packages/3d/environments/sci-fi/obligatory-sci-fi-c
 https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096#content
 https://assetstore.unity.com/packages/2d/textures-materials/dynamic-space-background-lite-104606
 https://assetstore.unity.com/packages/audio/music/space-game-bgm-2-169782
+Deep_in_space.wav, death.wav
+fullVolume.png, mute.png
