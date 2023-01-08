@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Easy/Map1-cutscene.unity
     guid: 36226fb64621c43c589e4e1be6225333
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Medium/Map1-cutscene 2.unity
     guid: aa88a14fd054a466582b9ddf1e05dfd3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Hard/Map1-cutscene 1.unity
     guid: 49d356e5297c0455fb01e0817574b5f9
   - enabled: 1
