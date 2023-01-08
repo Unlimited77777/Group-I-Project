@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 97
+  controlID: 103
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 363.19995
     height: 722.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 292
     height: 511.2
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 40
+  controlID: 44
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 41
+  controlID: 45
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Unity assets/Sci-fi turrets/Textures
+    - Assets/Unity assets/Obligatory Scifi Corridor 01/Textures
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Unity assets/Sci-fi turrets/Textures
+  - Assets/Unity assets/Obligatory Scifi Corridor 01/Textures
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\ECS657\Group-I-Project\Tower Defense Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 373.40002}
-    m_SelectedIDs: 94860100
-    m_LastClickedID: 99988
-    m_ExpandedIDs: 00000000c8a70000fea7000000a8000008a80000aeb00000b0b00000b2b000007c860100808601008a8601009a86010000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 309.40002}
+    m_SelectedIDs: 786c0000
+    m_LastClickedID: 27768
+    m_ExpandedIDs: 000000000a6c00000c6c00000e6c0000106c00002c6c0000626c00001c0f010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000000a6c00000c6c00000e6c0000106c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -490,21 +490,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c404feff1405feff1607feff2207feff2e07feff3e07feff4c07feff5807feff6407feff7407feffea0efeff6016feff6e19feff7c1cfeff2a24feffd82bfeffe42bfefff02bfefffe2bfeff0a2cfeff162cfeff282cfeff9e33feffac36feff683efeffba46feff124ffeff7c57feffa057feff705efeffc05efeffe460feff1261feff4061feff7261feffa261feffd061fefffe61feff3062feffca69feff6471feff9674feffc877feff9a7ffeff6c87feff9a87feffc887fefff887feff2688feff5488feff8888feff2290feff5493feffde9bfeff52a4feffccacfeff58b5feff9eb5feff16cefeffded5feff36d9feff16e9feff60eefeffb8eefeffdaf0feffeaf0fefffaf0feff0ef1feff20f1feff30f1feff40f1feff56f1feffd2f8feff4e00ffff6203ffff7606ffff2a0effffde15ffffee15fffffe15ffff1016ffff2016ffff3016ffff4816ffffc41dffffd820ffff9a28fffff030ffff4c39ffffba41ffffe241ffff1266ffff8468ffff7072ffffe675ffff3676ffff72bcffffdebdffff48a8000076a8000010ab000026ad000064e40000cce4000042e6000090f70000ec4d0100
+      m_ExpandedIDs: a290feff0091feff2293feff3293feff4293feff5693feff6893feff7893feff8893feff9e93feff1a9bfeff96a2feffaaa5feffbea8feff72b0feff26b8feff36b8feff46b8feff58b8feff68b8feff78b8feff90b8feff0cc0feff20c3feffe2cafeff38d3feff94dbfeff02e4feff2ce4feff7ef2feff06f6feffdcf9feff3205ffff5a09ffff9611ffff981affff9429ffff622dffffdc35ffff9672ffff7276ffff5a8bffff92c6ffff90cfffffded7ffff86e0ffff18eaffff2cf2ffff14fbffff68720000a0730000b2770000d47b00009e7c0000cc7c0000047e0000ee8100002a83000010860000408800001ca6000038a7000096cb000030cc0000a2cc0000eed4000038d500000ad6000014d7000076340100ae350100c83501003a3f010038400100ac410100b44701000648010052480100745e010060630100b8670100f268010096690100227001005c70010010710100887a0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: wave (1)
+        m_OriginalName: wave (1)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 54130
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -783,9 +783,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 41.592106, y: -16.545933, z: 26.233112}
+    m_Target: {x: 14.121716, y: -55.588715, z: 57.621094}
     speed: 2
-    m_Value: {x: 41.592106, y: -16.545933, z: 26.233112}
+    m_Value: {x: 14.121716, y: -55.588715, z: 57.621094}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -831,13 +831,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.36617103, y: 0.18330835, z: -0.073803335, w: -0.9093467}
+    m_Target: {x: -0.38030013, y: 0.02858446, z: -0.01175915, w: -0.9243718}
     speed: 2
-    m_Value: {x: -0.36479905, y: 0.18341506, z: -0.07352674, w: -0.90987605}
+    m_Value: {x: -0.38029125, y: 0.028583791, z: -0.011758875, w: -0.9243502}
   m_Size:
-    m_Target: 39.820038
+    m_Target: 98.74181
     speed: 2
-    m_Value: 38.1053
+    m_Value: 98.74181
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -928,7 +928,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1

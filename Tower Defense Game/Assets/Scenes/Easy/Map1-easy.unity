@@ -17761,7 +17761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winUI: {fileID: 751061439}
   loseUI: {fileID: 1875101161}
-  endMessage: {fileID: 0}
+  endMessage: {fileID: 897287415}
   start_lives: 30
 --- !u!1 &2011615551
 GameObject:

@@ -10417,7 +10417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winUI: {fileID: 1660989256}
   loseUI: {fileID: 1082079108}
-  endMessage: {fileID: 0}
+  endMessage: {fileID: 1928667226}
   start_lives: 20
 --- !u!114 &1814967124
 MonoBehaviour:
