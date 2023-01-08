@@ -14782,11 +14782,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turret: {fileID: 2007995379}
-  pic:
-  - {fileID: 21300064, guid: 56d84991286850f428b4e7df0cca7380, type: 3}
-  - {fileID: 21300066, guid: 56d84991286850f428b4e7df0cca7380, type: 3}
-  - {fileID: 21300060, guid: 56d84991286850f428b4e7df0cca7380, type: 3}
   image: {fileID: 1731810870}
+  tempColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1741540786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17717,27 +17714,6 @@ MonoBehaviour:
     turretUpgradePrefab_Lv2: {fileID: 0}
     cost: 0
     costUpgrade: 0
-    type: 0
-  Turret1:
-    turretPrefab: {fileID: 1000013566905100, guid: 457faf71ae7461a49b88069aef3edb17, type: 3}
-    turretUpgradePrefab: {fileID: 1023274960289760348, guid: b82d3d2a3794bd34b99eab755f1703e5, type: 3}
-    turretUpgradePrefab_Lv2: {fileID: 7045174053406379936, guid: 46577c3d7a88cb845a2e11780d24e954, type: 3}
-    cost: 100
-    costUpgrade: 30
-    type: 0
-  Turret2:
-    turretPrefab: {fileID: 1314665628698371109, guid: 7b387be27affc44338376cd93c2a915a, type: 3}
-    turretUpgradePrefab: {fileID: 1314665628698371109, guid: e091d26ca18f2a849ab04db8c834e351, type: 3}
-    turretUpgradePrefab_Lv2: {fileID: 8883506045744411457, guid: 41428e5f3467efd4aa23a919c6ffb455, type: 3}
-    cost: 100
-    costUpgrade: 40
-    type: 0
-  Turret3:
-    turretPrefab: {fileID: 1607275392736766532, guid: f8f27e36a67f56c42b29e1e50e91405f, type: 3}
-    turretUpgradePrefab: {fileID: 8737979827544110602, guid: 5c65a6cd93f1d5d44a78e5014f567aff, type: 3}
-    turretUpgradePrefab_Lv2: {fileID: 473019639770429786, guid: f72be5f60b759fc40b09843144864f2f, type: 3}
-    cost: 100
-    costUpgrade: 50
     type: 0
   Merge:
     turretPrefab: {fileID: 0}

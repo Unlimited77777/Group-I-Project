@@ -6,20 +6,6 @@ using UnityEngine.InputSystem;
 
 public class ViewController : MonoBehaviour
 {
-
-    // public float speed = 1;
-    // public float mouseSpeed = 2000;
-    // // Update is called once per frame
-    // void Update()
-    // {
-    //     float h = Input.GetAxis("Horizontal");
-    //     float v = Input.GetAxis("Vertical");
-    //     float mouse = Input.GetAxis("Mouse ScrollWheel");
-    //     Debug.Log(mouse);
-    //     transform.Translate(new Vector3(h * speed, mouse * mouseSpeed, v * speed) * Time.deltaTime, Space.World);
-        
-    // }
-
     private CameraControls cameraActions;
     private InputAction movement;
     private Transform cameraTransform;
@@ -137,7 +123,7 @@ public class ViewController : MonoBehaviour
             speed = Mathf.Lerp(speed, maxSpeed, Time.deltaTime * acceleration);
             transform.position += targetPosition * speed * Time.deltaTime;
         }
-        else
+        else if (targetPosition.sqrMagnitude > 0 && targetPosition.sqrMagnitude <= 0.1f)
         {
             //create smooth slow down
             horizontalVelocity = Vector3.Lerp(horizontalVelocity, Vector3.zero, Time.deltaTime * damping);
