@@ -1,3 +1,6 @@
+Github Pages URL with Web-GL build:
+https://unlimited77777.github.io/Group-I-Project/build/index.html
+
 # Group-I-Project
 The story of game:
 
